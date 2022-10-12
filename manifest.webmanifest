@@ -2,7 +2,7 @@
   "name": "pahilagana",
   "short_name": "YtDL+",
 "share_target": {
-    "actio": "",
+    "action": "target.html",
     "params": {
       "title": "title",
       "text": "text",
