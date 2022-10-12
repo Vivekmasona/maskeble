@@ -1,6 +1,14 @@
 {
   "name": "pahilagana",
   "short_name": "YtDL+",
+"share_target": {
+    "action": "target.html",
+    "params": {
+      "title": "title",
+      "text": "text",
+      "url": "url"
+    }
+  },
   "start_url": "./",
   "display": "standalone",
   "background_color": "#000000",
