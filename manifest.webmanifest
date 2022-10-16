@@ -1,7 +1,7 @@
 {
-  "name": "pahilagana",
-  "short_name": "YtDL++",
-"share_target": {
+  "name": "PahilaGana",
+  "short_name": "PahilaGana",
+    "share_target": {
     "action": " /",
     "params": {
       "title": "title",
@@ -11,14 +11,31 @@
   },
   "start_url": "./",
   "display": "standalone",
-  "background_color": "#0000ff",
+  "background_color": "#000000",
   "theme_color": "#000000",
   "icons": [
     {
-      "src": "./icon.png",
+      "src": "./vivek.png",
       "type": "image/png",
-      "sizes": "192x192",
-      "purpose": "any maskable"
+      "sizes": "192x192"
+        }
+  ],
+  "screenshots": [
+    {
+      "src": "./vk1.jpg",
+      "type": "image/jpeg",
+      "sizes": "320x640"
+    },
+    {
+      "src": "./vk2.jpg",
+      "type": "image/jpeg",
+      "sizes": "320x640"
+    },
+    {
+      "src": "./vk3.jpg",
+      "type": "image/jpeg",
+      "sizes": "320x640"
     }
-  ]
+ ],
+ "description": "Pahilagana is a all in one video audio downloader ai and use app to direct share to download "
 }
