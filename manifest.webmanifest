@@ -40,9 +40,9 @@
  ],
 "shortcuts": [
         {
-            "name": "My Account",
-            "url": "/?homescreen=1#account",
-            "icons": [{ "src": "img/shortcuts/account.png", "sizes": "192x192" }]
+            "name": "YTmusic",
+            "url": "/#openModal",
+            "icons": [{ "src": "vivek2.png", "sizes": "192x192" }]
         },
         {
             "name": "My Converted Files",
