@@ -22,6 +22,11 @@
         }
   ],
   "screenshots": [
+{
+      "src": "./vk.jpg",
+      "type": "image/jpeg",
+      "sizes": "320x640"
+    },
     {
       "src": "./vk1.jpg",
       "type": "image/jpeg",
