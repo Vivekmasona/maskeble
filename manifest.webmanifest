@@ -63,15 +63,11 @@
       ]
 
    }
+{
 
-],
-"shortcuts": [
+      "name": "YTmusic2",
 
-   {
-
-      "name": "Copy-DL",
-
-      "description": "Copy Link Download",
+      "description": "play music from YouTube ",
 
       "url": "/#Download",
 
@@ -92,5 +88,6 @@
    }
 
 ],
+
  "description": "Pahilagana is a all in one video audio downloader ai and use app to direct share to download "
 }
