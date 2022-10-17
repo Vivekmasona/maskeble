@@ -44,7 +44,7 @@
 
       "name": "YTmusic",
 
-      "description": "A description of what the shortcut does",
+      "description": "play music from YouTube ",
 
       "url": "/#openModal",
 
@@ -52,7 +52,7 @@
 
          {
 
-            "src": "./vivek.png",
+            "src": "./vivek2.png",
 
             "type": "image/png",
 
