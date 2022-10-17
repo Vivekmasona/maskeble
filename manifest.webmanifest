@@ -63,29 +63,6 @@
       ]
 
    }
-{
-
-      "name": "YTmusic2",
-
-      "description": "play music from YouTube ",
-
-      "url": "/#Download",
-
-      "icons": [
-
-         {
-
-            "src": "/vivek.png",
-
-            "type": "image/png",
-
-            "purpose": "any"
-
-         }
-
-      ]
-
-   }
 
 ],
 
