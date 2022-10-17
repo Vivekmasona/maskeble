@@ -9,21 +9,7 @@
       "url": "url"
     }
   },
-"shortcuts" : [
-  {
-    "name": "Today's agenda",
-    "url": "/today",
-    "description": "List of events planned for today"
-  },
-  {
-    "name": "New event",
-    "url": "/create/event"
-  },
-  {
-    "name": "New reminder",
-    "url": "/create/reminder"
-  }
-]
+
   "start_url": "./",
   "display": "standalone",
   "background_color": "#000000",
@@ -52,5 +38,20 @@
       "sizes": "320x640"
     }
  ],
+"shortcuts" : [
+  {
+    "name": "Today's agenda",
+    "url": "/today",
+    "description": "List of events planned for today"
+  },
+  {
+    "name": "New event",
+    "url": "/create/event"
+  },
+  {
+    "name": "New reminder",
+    "url": "/create/reminder"
+  }
+],
  "description": "Pahilagana is a all in one video audio downloader ai and use app to direct share to download "
 }
