@@ -55,9 +55,9 @@
             "src": "./vivek2.png",
 
             "type": "image/png",
-             "sizes": "192x192",
+             
 
-            "purpose": "any",
+            "purpose": "any"
 
          }
 
