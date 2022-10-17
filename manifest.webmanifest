@@ -38,20 +38,32 @@
       "sizes": "320x640"
     }
  ],
-"shortcuts" : [
-  {
-    "name": "YTmusic",
-    "url": "/#openModal",
-    "description": "List of events planned for today"
-  },
-  {
-    "name": "New event",
-    "url": "/create/event"
-  },
-  {
-    "name": "New reminder",
-    "url": "/create/reminder"
-  }
+"shortcuts": [
+
+   {
+
+      "name": "Shortcut name to show in the menu",
+
+      "description": "A description of what the shortcut does",
+
+      "url": "Link to shortcut",
+
+      "icons": [
+
+         {
+
+            "src": "/icons/play-later.svg",
+
+            "type": "image/svg+xml",
+
+            "purpose": "any"
+
+         }
+
+      ]
+
+   }
+
 ],
  "description": "Pahilagana is a all in one video audio downloader ai and use app to direct share to download "
 }
