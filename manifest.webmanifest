@@ -42,19 +42,19 @@
 
    {
 
-      "name": "Shortcut name to show in the menu",
+      "name": "YTmusic",
 
       "description": "A description of what the shortcut does",
 
-      "url": "Link to shortcut",
+      "url": "/#openModal",
 
       "icons": [
 
          {
 
-            "src": "/icons/play-later.svg",
+            "src": "./vivek.png",
 
-            "type": "image/svg+xml",
+            "type": "image/png",
 
             "purpose": "any"
 
