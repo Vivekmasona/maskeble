@@ -1,44 +1,111 @@
 {
-  "name": "Downloader",
-  "short_name": "PahilaGana",
-    "share_target": {
-    "action": " /",
-    "params": {
-      "title": "title",
-      "text": "text",
-      "url": "url"
-    }
-  },
-
-  "start_url": "./",
-  "display": "standalone",
-  "background_color": "#000000",
-  "theme_color": "#000000",
-  "icons": [
-    {
-      "src": "./vivek.png",
-      "type": "image/png",
-      "sizes": "192x192"
+    "name": "MConverter",
+    "short_name": "MConverter",
+    "description": "Free secure online file converter. Quick, easy and simple. Can convert large files and in bulk. Lots of video, audio, image, e-book, office and archive formats are supported, including AVIF and JPEG XL.",
+    "categories": ["utilities", "photo", "music", "books"],
+    "iarc_rating_id": "0e447ab4-66c9-4632-8486-9a364857c470",
+    "start_url": "/?homescreen=1",
+    "display": "standalone",
+    "theme_color": "#2e5598",
+    "background_color": "#2e5598",
+    "icons": [
+        {
+            "src": "vivek.png",
+            "type": "image/png",
+            "sizes": "1024x1024",
+            "purpose": "maskable"
+        },
+        {
+            "src": "vivek2.png",
+            "type": "image/png",
+            "sizes": "512x512",
+            "purpose": "any"
         }
-  ],
-  "screenshots": [
-    {
-      "src": "./screenshot1.jpg",
-      "type": "image/jpeg",
-      "sizes": "320x640"
+    ],
+    "screenshots" : [
+        {
+            "src": "vivek.png",
+            "sizes": "1080x2280",
+            "type": "image/png"
+        },
+        {
+            "src": "img/scr.png",
+            "sizes": "1080x2280",
+            "type": "image/png"
+        },
+        {
+            "src": "img/screenshots/mobile-share-file.png",
+            "sizes": "1080x2280",
+            "type": "image/png"
+        },
+        {
+            "src": "img/screenshots/mobile-convert-dark.png",
+            "sizes": "1080x2280",
+            "type": "image/png"
+        },
+        {
+            "src": "img/screenshots/mobile-download-multi.png",
+            "sizes": "1080x2280",
+            "type": "image/png"
+        },
+        {
+            "src": "img/screenshots/desktop-home.png",
+            "sizes": "2400x1600",
+            "type": "image/png"
+        },
+        {
+            "src": "img/screenshots/desktop-pick-format.png",
+            "sizes": "2400x1600",
+            "type": "image/png"
+        },
+        {
+            "src": "img/screenshots/desktop-convert-dark.png",
+            "sizes": "2400x1600",
+            "type": "image/png"
+        },
+        {
+            "src": "img/screenshots/desktop-download-multi.png",
+            "sizes": "2400x1600",
+            "type": "image/png"
+        }
+    ],
+    "shortcuts": [
+        {
+            "name": "My Account",
+            "url": "/?homescreen=1#account",
+            "icons": [{ "src": "img/shortcuts/account.png", "sizes": "192x192" }]
+        },
+        {
+            "name": "My Converted Files",
+            "short_name": "My Files",
+            "url": "/?homescreen=1#history",
+            "icons": [{ "src": "img/shortcuts/history.png", "sizes": "192x192" }]
+        },
+        {
+            "name": "Options",
+            "url": "/?homescreen=1#options",
+            "icons": [{ "src": "img/shortcuts/options.png", "sizes": "192x192" }]
+        }
+    ],
+    "share_target": {
+        "action": "/?homescreen=1&share-target=1",
+        "method": "POST",
+        "enctype": "multipart/form-data",
+        "params": {
+            "files": [{
+                "name": "file",
+                "accept": ["*/*"]
+            }]
+        }
     },
-    {
-      "src": "./screenshot2.jpg",
-      "type": "image/jpeg",
-      "sizes": "320x640"
-    },
-    {
-      "src": "./screenshot3.jpg",
-      "type": "image/jpeg",
-      "sizes": "320x640"
-    }
- ],
-
-
- "description": "Pahilagana is a all in one video audio downloader ai and use app to direct share to download "
+    "related_applications": [
+        {
+            "platform": "play",
+            "id": "eu.mconverter.twa"
+        },
+        {
+            "platform": "webapp",
+            "url": "https://mconverter.eu/manifest.json"
+        }
+    ]
 }
