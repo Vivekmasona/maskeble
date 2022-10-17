@@ -1,5 +1,5 @@
 {
-  "name": "Download❤️here",
+  "name": "Downloader",
   "short_name": "PahilaGana",
     "share_target": {
     "action": " /",
@@ -41,7 +41,7 @@
 "shortcuts" : [
   {
     "name": "YTmusic",
-    "url": "/https://www.PahilaGana.xyz",
+    "url": "/#openModal",
     "description": "List of events planned for today"
   },
   {
