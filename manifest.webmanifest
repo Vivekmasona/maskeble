@@ -5,7 +5,7 @@
     "action": " /",
     "params": {
       "title": "title",
-      "vk": "vk",
+      "text": "text",
       "url": "url"
     }
   },
