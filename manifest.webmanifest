@@ -71,8 +71,8 @@
  ],
   "shortcuts": [
     {
-      "name": "share link dl",
-      "url": "/api1",
+      "name": "CopyDL",
+      "url": "/#download",
       "icons": [
         {
           "src": "/vivek.png",
@@ -82,8 +82,8 @@
       ]
     },
     {
-      "name": "copy link dl2",
-      "url": "/api2",
+      "name": "CopyDL.2",
+      "url": "/#api1",
       "icons": [
         {
           "src": "/vivek.png",
@@ -92,20 +92,10 @@
         }
       ]
     },
-    {
-      "name": "Copy link dl",
-      "url": "/download",
-      "icons": [
-        {
-          "src": "/vivek.png",
-          "type": "image/png",
-          "sizes": "192x192"
-        }
-      ]
-    },
+    
     {
       "name": "YTmusic",
-      "url": "/openModal.php",
+      "url": "/#openModal",
       "icons": [
         {
           "src": "/vivek.png",
