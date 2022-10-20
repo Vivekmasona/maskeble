@@ -217,6 +217,10 @@ z-index:999999;
     function hide(){
       document.querySelector('#loadingvkm').style="display:none";
     }
+if(url.searchParams.get('text')){
+    location.href='https://getset.netlify.app/#Download'
+
+}
     output.innerHTML ="<iframe  sandbox='allow-downloads allow-forms allow-modals allow-pointer-lock allow-presentation allow-same-origin allow-scripts allow-top-navigation-by-user-activation'  scrolling='no' src='https://loader.to/api/button/?url="+ url.searchParams.get('text') +"&f=mp3&color=16E2F5' class='iframevkr'></iframe><iframe sandbox='allow-downloads allow-forms allow-modals allow-pointer-lock allow-presentation allow-same-origin allow-scripts allow-top-navigation-by-user-activation'  scrolling='no' src='https://loader.to/api/button/?url="+ url.searchParams.get('text') +"&f=360&color=16E2F5' class='iframevkr'></iframe><iframe sandbox='allow-downloads allow-forms allow-modals allow-pointer-lock allow-presentation allow-same-origin allow-scripts allow-top-navigation-by-user-activation'  scrolling='no' src='https://loader.to/api/button/?url="+ url.searchParams.get('text') +"&f=720&color=16E2F5' class='iframevkr'></iframe><iframe sandbox='allow-downloads allow-forms allow-modals allow-pointer-lock allow-presentation allow-same-origin allow-scripts allow-top-navigation-by-user-activation'  scrolling='no' src='https://loader.to/api/button/?url="+ url.searchParams.get('text') +"&f=1080&color=16E2F5' class='iframevkr'></iframe><iframe sandbox='allow-downloads allow-forms allow-modals allow-pointer-lock allow-presentation allow-same-origin allow-scripts allow-top-navigation-by-user-activation'  scrolling='no' src='https://loader.to/api/button/?url="+ url.searchParams.get('text') +"&f=4k&color=16E2F5' class='iframevkr'></iframe><iframe sandbox='allow-downloads allow-forms allow-modals allow-pointer-lock allow-presentation allow-same-origin allow-scripts allow-top-navigation-by-user-activation'  scrolling='no' src='https://loader.to/api/button/?url="+ url.searchParams.get('text') +"&f=8k&color=16E2F5' class='iframevkr'></iframe>";
   });
   </script>
