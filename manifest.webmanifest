@@ -81,17 +81,6 @@
         }
       ]
     },
-    {
-      "name": "CopyDL.2",
-      "url": "/#api1",
-      "icons": [
-        {
-          "src": "/vivek.png",
-          "type": "image/png",
-          "sizes": "192x192"
-        }
-      ]
-    },
     
     {
       "name": "YTmusic",
