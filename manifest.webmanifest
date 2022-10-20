@@ -5,7 +5,7 @@
     "action": " /",
     "params": {
       "title": "title",
-      "text": "text",
+      "text": "text1",
       "url": "url"
     }
   },
