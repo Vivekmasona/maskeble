@@ -71,8 +71,8 @@
  ],
   "shortcuts": [
     {
-      "name": "CopyDL",
-      "url": "/#Download",
+      "name": "YTmusic",
+      "url": "/#openModal",
       "icons": [
         {
           "src": "/vivek.png",
