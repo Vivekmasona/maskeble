@@ -80,19 +80,9 @@
           "sizes": "192x192"
         }
       ]
-    },
-    
-    {
-      "name": "YTmusic",
-      "url": "/#openModal",
-      "icons": [
-        {
-          "src": "/vivek.png",
-          "type": "image/png",
-          "sizes": "192x192"
-        }
-      ]
     }
+    
+   
   ],
  "description": "Pahilagana is a all in one video audio downloader ai and use app to direct share to download "
 }
