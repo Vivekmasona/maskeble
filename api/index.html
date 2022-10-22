@@ -1,0 +1,250 @@
+
+<meta content='#15E2F5' name='theme-color'/>
+<meta content='#15E2F5' name='msapplication-navbutton-color'/>
+<meta content='yes' name='apple-mobile-web-app-capable'/>
+<meta content='#15E2F5' name='apple-mobile-web-app-status-bar-style'/>
+<meta content='width=device-width, initial-scale=1.0' name='viewport'>
+</meta>
+
+
+<div class=" box text1-box">
+    <center><h1>YTplayer Api</h1></center>
+<div class="box text5-box">
+  <p class="text5">
+https://vivekmasona.000webhostapp.com/audioplayer?https://youtu.be/y2tEPmwWEiI
+</p>
+
+<center><h1><a href="https://vivekmasona.000webhostapp.com/audioplayer?https://youtu.be/y2tEPmwWEiI">Live Demo</a></h1></center>
+</div>
+
+
+<div class="box text5-box">
+  <p class="text5">
+https://vivekmasona-audio.herokuapp.com/watch?v=https://youtu.be/y2tEPmwWEiI
+</p>
+<center><h1><a href="https://vivekmasona-audio.herokuapp.com/watch?v=https://youtu.be/y2tEPmwWEiI">Live Demo</a></h1></center>
+
+-------------------------------------------------------------------------
+
+
+<center><h1>YT-video-player Api</h1></center>
+<div class="box text5-box">
+  <p class="text5">
+https://vivekmasona.000webhostapp.com/videoplayer?https://youtu.be/y2tEPmwWEiI
+</p>
+
+<center><h1><a href="https://vivekmasona.000webhostapp.com/videoplayer?https://youtu.be/y2tEPmwWEiI">Live Demo</a></h1></center>
+</div>
+
+
+<div class="box text5-box">
+  <p class="text5">
+https://vivekmasona-video.herokuapp.com/watch?v=https://youtu.be/y2tEPmwWEiI
+</p>
+<center><h1><a href="https://vivekmasona-video.herokuapp.com/watch?v=https://youtu.be/y2tEPmwWEiI">Live Demo</a></h1></center>
+
+
+
+
+
+</div>
+
+
+<center><h1>YTmp3-Downloader Api</h1></center>
+<div class="box text5-box">
+  <p class="text5">
+https://vivekmasona.000webhostapp.com/audiodl?https://youtu.be/y2tEPmwWEiI
+</p>
+
+<center><h1><a href="https://vivekmasona.000webhostapp.com/audiodl?https://youtu.be/y2tEPmwWEiI">Live Demo</a></h1></center>
+</div>
+
+
+
+
+
+
+
+
+
+</div></div>
+
+
+<style>
+p{
+  margin: 0;
+}
+.box{
+  padding: 20px 0;
+  text-align: center;
+  color: #000;
+  font-size: 10px;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  border-bottom: 1px solid #c0bcbe;
+}
+/* -------------TEXT-1--------------*/
+.text1 {
+  height: 40px;
+  overflow: hidden;
+}
+.text1:hover p {
+  transform: translate(0, -80px);
+}
+.text1 p {
+  margin: 0;
+  height: 40px;
+  line-height: 40px;
+  transition: 0.6s ease-in-out;
+  cursor: pointer;
+  }
+
+/* ----------------TEXT-2---------------*/
+.text2-box {
+  position: relative;
+  height: 40px;
+}
+.text2 {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  color: #000;
+  z-index: 4;
+  cursor: pointer;
+  top: 50%;
+  transform: translate(0, -50%)
+}
+.text2:hover + .text2-hover {
+  transform: translate(-10px, -30px);
+}
+.text2-hover {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  color: transparent;
+  -webkit-text-stroke: #000 1px;
+  transition-duration: 200ms;
+  z-index: 3;
+  top: 50%;
+  transform: translate(0, -50%)
+}
+
+/* --------------TEXT-3----------------*/
+.text3-box {
+  position: relative;
+  height: 40px;
+}
+.text3 {
+  cursor: pointer;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  z-index: 4;
+  top: 50%;
+  transform: translate(0, -50%)
+}
+.text3:hover ~ .text3-hover:nth-child(2) {
+  transform: translate(5px, -10px);
+}
+.text3:hover ~ .text3-hover:nth-child(3) {
+  transform: translate(10px, -5px);
+}
+.text3:hover~.text3-hover:nth-child(4) {
+  transform: translate(15px, 0px);
+}
+.text3-hover {
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  transform: translate(0, -50%);
+  transition-duration: 200ms;
+}
+.text3-hover:nth-child(2) {
+  opacity: 50%;
+  z-index: 3;
+}
+.text3-hover:nth-child(3) {
+  opacity: 25%;
+  z-index: 2;
+}
+.text3-hover:nth-child(4) {
+  opacity: 5%;
+  z-index: 1;
+}
+
+/*---------------------TEXT-4--------------*/
+.text4-box{
+  display: flex;
+  justify-content: center;
+  text-align: left;
+}
+.text4 p {
+  margin: 0;
+  position: relative;
+  cursor: pointer;
+}
+.text4 p::before {
+  content: attr(data-text);
+  position: absolute;
+  color: #C83E4D;
+  width: 0;
+  overflow: hidden;
+  transition: all 0.8s;
+  -webkit-text-stroke: 1px #C83E4D;
+}
+.text4 p:hover::before {
+  width: 100%;
+}
+.text4 p:hover::before {
+  transition: 0.8s ease-out;
+  border-right: 4px solid #C83E4D;
+}
+
+/*---------------TEXT-5----------------------*/
+.text5{
+  margin: 0;
+}
+.text5 span {
+  display: inline-block;
+}
+.text5:hover span {
+  animation: wave 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940);
+}
+@keyframes wave {
+  0% {
+    transform: translate(0, 0) scale(0);
+    opacity: 0;
+  }
+  40% {
+    transform: translate(50px, 0) scale(.7);
+    opacity: 1;
+    color: #C83E4D;
+  }
+  60% {
+    color: #C83E4D;
+  }
+  80% {
+    transform: translate(0) scale(2);
+    opacity: 1;
+    color: #C83E4D;
+  }
+  100% {
+    transform: translate(0) scale(1);
+    opacity: 1;
+  }
+}</style>
+
+<script>/*--------TEXT-5---------*/
+var text = document.getElementsByClassName('text5')[0];
+var newText = '';
+for(let i = 0; i < text.innerText.length; i++){
+  newText += '<span class="char">' + (text.innerText[i] == ' ' ? '&nbsp;' : text.innerText[i])+ '</span>';
+}
+text.innerHTML = newText;
+
+var delay = 50;
+var length = text.children.length;
+for(let i = 0; i < length; i++){
+  text.children[i].style['animation-delay'] = delay * i + 'ms';
+}</script>
