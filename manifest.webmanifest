@@ -71,18 +71,39 @@
  ],
   "shortcuts": [
     {
-      "name": "YTmusic",
-      "url": "/#openModal",
+      "name": "Api",
+      "url": "/api",
       "icons": [
         {
-          "src": "/vivek.png",
+          "src": "/logo/2vivek.png",
+          "type": "image/png",
+          "sizes": "192x192"
+        }
+      ]
+    },
+    {
+      "name": "Radio",
+      "url": "/fm",
+      "icons": [
+        {
+          "src": "/logo/1vivek.png",
+          "type": "image/png",
+          "sizes": "192x192"
+        }
+      ]
+    },
+    
+    {
+      "name": "YTmusic",
+      "url": "/music",
+      "icons": [
+        {
+          "src": "/logo/vivek2.png",
           "type": "image/png",
           "sizes": "192x192"
         }
       ]
     }
-    
-   
   ],
  "description": "Pahilagana is a all in one video audio downloader ai and use app to direct share to download "
 }
