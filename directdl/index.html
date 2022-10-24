@@ -1,0 +1,115 @@
+
+<meta content='#15E2F5' name='theme-color'/>
+<meta content='#15E2F5' name='msapplication-navbutton-color'/>
+<meta content='yes' name='apple-mobile-web-app-capable'/>
+<meta content='#15E2F5' name='apple-mobile-web-app-status-bar-style'/>
+<meta content='width=device-width, initial-scale=1.0' name='viewport'>
+</meta>
+
+
+
+<script>document.addEventListener('DOMContentLoaded', () => {
+  const outputMessage = (text) => {
+    document.getElementById('output').innerHTML = text;
+  };
+  const outputAnchor = (text) => {
+    outputMessage(`
+
+
+<iframe src="https://vivekmasona.000webhostapp.com/videodl?${text}" height="400px" width="100%" frameborder="0px"></iframe>
+😊 Download success
+</br>
+❤️Only support YouTube audio
+</br>
+
+🥺 ऑडियो डाउनलोड नहीं होने पर फिर से प्रयास करें 
+</br>
+🥺Try again if audio is not downloaded
+</br>
+🙋 Developer vivek verma
+
+
+
+
+
+
+
+`);
+  };
+  
+  document.getElementById('paste').addEventListener('click', () => {
+    // Exec Command
+    const readonly = document.getElementById('readonly');
+    readonly.focus();
+    document.execCommand('paste');
+    if(readonly.value.trim()) {
+      const text = readonly.value.trim();
+      console.log('Success To Exec Command', text);
+      return outputAnchor(text);
+    }
+    
+    // Async Clipboard API
+    if(!navigator.clipboard) {
+      return outputMessage('Failed To Exec Command And Async Clipboard API Is Not Available');
+    }
+    navigator.clipboard.readText()
+      .then((text) => {
+        if(text == null || !text.trim()) {
+          console.log('Success To Async Clipboard API But No Value', text);
+          return outputMessage('No');
+        }
+        console.log('Success To Async Clipboard API', text);
+        outputAnchor(text);
+      })
+      .catch((error) => {
+        console.warn('Failed To Exec Command And Async Clipboard API', error);
+        outputMessage(' 😭');
+      });
+  });
+  
+  document.getElementById('input').addEventListener('input', (event) => {
+    if(!event.target.value.trim()) {
+      return outputMessage('No Input');
+    }
+    outputAnchor(event.target.value.trim());
+  });
+});
+
+window.addEventListener('load', () => {
+  const paste = document.getElementById('paste');
+  paste.focus();
+  paste.click();
+});</script>
+
+<style>
+body {
+  font-family: monospace;
+  word-break: break-all;
+}
+
+#input {
+  box-sizing: border-box;
+  width: 100%;
+}
+
+#readonly,
+#paste {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  opacity: 0;
+}
+
+</style>
+
+
+<div>
+  
+  <input type="text" id="readonly" value="" />
+  <button type="button" id="paste" tabindex="-1">Paste</button>
+</div>
+
+<p id="output"></p>
+<style>body{ 
+background-color:#00ffff;
+}</style>
