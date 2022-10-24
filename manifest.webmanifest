@@ -70,12 +70,13 @@
     }
  ],
   "shortcuts": [
+
     {
-      "name": "Api",
-      "url": "/api",
+      "name": "YTmp3DL direct",
+      "url": "/directdl",
       "icons": [
         {
-          "src": "/logo/2vivek.png",
+          "src": "/logo/ddl.png",
           "type": "image/png",
           "sizes": "192x192"
         }
