@@ -1,6 +1,6 @@
 {
-  "name": "Downloader",
-  "short_name": "PahilaGana",
+  "name": "DownLoad-Fy",
+  "short_name": "VFy",
     "share_target": {
     "action": " /",
     "params": {
@@ -72,7 +72,7 @@
   "shortcuts": [
 
     {
-      "name": "ViD720P",
+      "name": "VFy-Downloader",
       "url": "/directdl",
       "icons": [
         {
@@ -83,7 +83,7 @@
       ]
     },
     {
-      "name": "Radio",
+      "name": "VFy-FM",
       "url": "/fm",
       "icons": [
         {
@@ -95,7 +95,7 @@
     },
     
     {
-      "name": "YTmusic",
+      "name": "VFy-Music",
       "url": "/music",
       "icons": [
         {
