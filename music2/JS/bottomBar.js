@@ -3,7 +3,7 @@ const topBtn = document.querySelectorAll('#configs a');
 // info
 
 topBtn[0].addEventListener('click', function() {
-  if (confirm("The About Page will open a page in a new tab. Continue?")) {
+  if (confirm("Do you want update this app")) {
     window.open("https://www.pahilagana.xyz");
   }
 });
