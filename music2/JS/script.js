@@ -70,7 +70,7 @@ function atsrc(url) {
       if (data.title !== undefined) {
         // Playback
         controls.style.display = 'flex';
-        audio.src = `https://projectlounge.pw/ytdl/download?url=${data.url}&format=${c}`;
+        audio.src = `https://vivekmasona.000webhostapp.com/audioplayer?${data.url}&format=${c}`;
         audio.play();
         controlBtn[0].innerText = 'pause';
 
