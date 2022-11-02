@@ -31,8 +31,9 @@ video audio  downloading site so please  visit and download high quality audio s
 <title>VIVEKFY-YTMUSIC</title>
 
 <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+
 <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
-<script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+<script src="https://vkrapi.000webhostapp.com/jquery-mobile.js"></script>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css" />
 <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
 <style>
@@ -147,15 +148,6 @@ border-radius:5px;
     <div data-role="header">
       
 
- 
-
-
-
-
-
-
-
-
       <h1>Pahila
 <span id="Tube">Gana<span></span></span></h1>
       
@@ -262,7 +254,7 @@ $.get(
             var nextPageToken = data.nextPageToken;
             var prevPageToken = data.prevPageToken;
             $.each(data.items,function(i,item){
-              var output = getOutput(item);
+              var output = getOutput(item,i);
               $(output).appendTo("#homepage-content").listview();
             });
             if(prevPageToken){
@@ -280,7 +272,7 @@ $.get(
     } 
 }
 
-function getOutput(item){
+function getOutput(item,i){
   var id = item.id.videoId;
   var title = item.snippet.title;
   var description = item.snippet.description;
@@ -291,23 +283,25 @@ function getOutput(item){
  //Build our output:
   var output =
   '<ul data-role="listview" data-inset="true" id="myList">' +
-      '<li><a onclick="loadSong(this)" class="list" vid="'+id+'"><img src="'+thumb+'" alt="pahilagana">'+title+'</a></li>' +
+      '<li><a onclick="loadSong(this)" index="'+i+'" class="list" vid="'+id+'"><img src="'+thumb+'" alt="pahilagana">'+title+'</a></li>' +
   '</ul>';
 
   return output;
 }
 
-function loadSong(song){
+function loadSong(song,ind){
+    
   var id = $(song).attr("vid");
+ var indId = parseInt($(song).attr("index"));
   var thumbnail = $(song).children('img').attr("src");
   localStorage.setItem("playPresent",id);
   localStorage.setItem("thumbnail",thumbnail);
   $("#thumbnail").attr("src",thumbnail);
-  play(id);
+  play(id,indId);
 }
 
-function play(id){
-    data = "https://Vivekmasona.000webhostapp.com/audioplayer/?https://youtu.be/"+id;
+function play(id,Sid){
+    data = "https://vivekmasona-audio.herokuapp.com/watch?v=https://youtu.be/"+id;
        document.getElementById("SThumb").src = "https://i.ytimg.com/vi/"+id+"/default.jpg";
 
     document.getElementById("pahilagana").onclick = ()=>{
@@ -315,6 +309,13 @@ function play(id){
     };
 
     audio = document.getElementById("SAudio");
+  audio.play()
+  audio.addEventListener("ended", () => {
+    
+   document.getElementsByClassName("list")[Sid+1].click()
+   console.log('Next')
+});
+
   document.getElementById("play").onclick = function(){
      if (audio.paused){
       document.querySelector("#play i").className = "fa fa-pause";
@@ -380,5 +381,6 @@ Width:108%;
 }</style>
 <style >
 Footer{
-   -Color:#04B2A7;
+   color:#04B2A7;
 }</style>
+    
