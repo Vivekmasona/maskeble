@@ -239,7 +239,7 @@ function search(){
   //Get Form input
   $("#homepage-content").html("");
   
-  var ytapi = "AIzaSyCvvCEglfScvzWjIgr6lB8mMAY7UTrDDbo";
+  var ytapi = "AIzaSyAuncZ6zOgCiTErzcEc3cHGuhybV1UIJvA";
   
   
   var q = $(".search-bar").val();
@@ -252,8 +252,8 @@ $.get(
           part : 'snippet , id',
           q : q,
           type : 'video',
-          key : "AIzaSyCvvCEglfScvzWjIgr6lB8mMAY7UTrDDbo",
-          maxResults : "20"
+          key : "AIzaSyAuncZ6zOgCiTErzcEc3cHGuhybV1UIJvA",
+          maxResults : "40"
         },
           function(data){
             var nextPageToken = data.nextPageToken;
