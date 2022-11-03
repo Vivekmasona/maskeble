@@ -306,7 +306,7 @@ function loadSong(song,ind){
 }
 
 function play(id,Sid){
-    data = "https://vivekmasona.000webhostapp.com/audioplayer?https://youtu.be/"+id;
+    data = "https://soundrex.herokuapp.com/api/v1/audio-download?id="+id+"&title=";
        document.getElementById("SThumb").src = "https://i.ytimg.com/vi/"+id+"/hqdefault.jpg";
 
     document.getElementById("pahilagana").onclick = ()=>{
