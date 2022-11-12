@@ -15,18 +15,10 @@
   const outputAnchor = (text) => {
     outputMessage(`
 
-
-<iframe src="https://projectlounge.pw/ytdl/download?url=${text}" height="0px" width="100%" frameborder="0px"></iframe>
-😊 Download success
-</br>
-❤️ support 720p videos
-</br>
-
-🥺 वीडियो डाउनलोड नहीं होने पर फिर से प्रयास करें 
-</br>
-🥺Try again if videos is not downloaded
-</br>
-🙋 Developer vivek verma
+<video width="320" height="240" controls>
+  <source src="https://projectlounge.pw/ytdl/download?url=${text}" type="video/mp4">
+  
+</video>
 
 
 
