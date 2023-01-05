@@ -39,7 +39,7 @@ const palette = {
 const noembed = "https://noembed.com/embed?dataType=json&url=";
 const proxy = 'https://corsproxy.io/?';
 const provider = 'https://xtcyg6.deta.dev/';
-const query = (new URL(location.href)).searchParams.get('q');
+const query = (new URL(location.href)).searchParams.get('vivek');
 
 // Reusable Functions
 
