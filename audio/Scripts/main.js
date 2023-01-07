@@ -47,8 +47,8 @@ const play = (url) => {
         document.querySelector('#title').innerText = data.title;
         document.querySelector('#author').innerText = data.author_name;
 
-        history.pushState('', '', location.origin + '/?q=' + ytID(url));
-        history.replaceState('', '', location.origin + '/?q=' + ytID(url));
+        history.pushState('', '', location.origin + '/?https://youtu.be/' + ytID(url));
+        history.replaceState('', '', location.origin + '/?https://youtu.be/' + ytID(url));
 
         mediaSessionAPI(data.title, data.author_name, image.src)
       }
