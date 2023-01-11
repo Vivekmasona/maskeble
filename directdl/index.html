@@ -1,30 +1,261 @@
+<b href="#" onmousedown="op.play()">
+<i class="fa fa-archive" style="font-size:0.5px;color: transparent"></i>
+<!-----AIzaSyBh6s9emY3VYSbsHudlhxProRt8mtFyt2s------->
 
-<video id="video" src="http://vjs.zencdn.net/v/oceans.mp4" poster="http://vjs.zencdn.net/v/oceans.png" controls="on"></video>
-<br>
+<div class="cover">
 
-<button id="pipButton">enable pip</button>
+
+<div class="container">
+    
+    <div class="row">
+        <div class="col-md-8 col-md-offset-2">
+           <center> <form id="search-form" name="search-form" class="form-horizontal">
+                <div class="form-group">
+                    <div class="col-md-6 col-md-offset-2">
+                        <input type="text" class="form-control" id="query" placeholder="search and download any songs here's free
+ " />
+                    </div>
+                    <div class="col-md-4">
+                        <button id="submit-button" class="btn btn-primary">s e a r c h</button>
+
+<img class="hold-me" onclick="startDictation()" src="https://img.icons8.com/color/50/000000/microphone.png" />
+
+                    </div>
+                </div>
+            </form>
+        </center>
+    
+    
+
+
+
+<div class="row">
+        <div id="results"></div>
+        <div id="buttons"></div>
+</div>
+
+
+
+
+    
+
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 <script>
-  // Hide button if Picture-in-Picture is not supported or disabled.
-  // pipButton.hidden = !document.pictureInPictureEnabled || video.disablePictureInPicture;
 
-  pipButton.addEventListener('click', function() {
-    // If there is no element in Picture-in-Picture yet, let’s request
-    // Picture-in-Picture for the video, otherwise leave it.
-    if (!document.pictureInPictureElement) {
-      video.requestPictureInPicture()
-      .catch(error => {
-        // Video failed to enter Picture-in-Picture mode.
-      });
-    } else {
-      document.exitPictureInPicture()
-      .catch(error => {
-        // Video failed to leave Picture-in-Picture mode.
-      });
+var apiKey = 'AIzaSyBfsNcJJHd-O0ftUzH2KqIRc_KhXgPXne0';
+var url = 'https://www.googleapis.com/youtube/v3/search';
+
+$(document).ready(function () {
+    $('#search-form').submit(function (e) {
+        e.preventDefault();
+    });
+
+    $('#submit-button').click(function (e) {
+        e.preventDefault();
+        search();
+    })
+});
+
+function search() {
+
+    // Clear the DOM
+    $('#results').html('');
+    $('#buttons').html('');
+
+    // Get form input
+
+    var query = $('#query').val();
+
+    // GET REQUEST
+
+    $.get(
+        url, {
+            part: 'snippet, id',
+            q: query,
+            type: 'video',
+            maxResults: 50,
+            key: apiKey
+        },
+        function (data) {
+            console.log(data);
+            var nextPageToken = data.nextPageToken;
+            var prevPageToken = data.prevPageToken;
+
+            $.each(data.items, function (index, item) {
+                var output = buildOutput(item);
+                // Display Results
+                $('#results').append(output);
+            });
+        }
+    )
+}
+
+function buildOutput(item) {
+
+    var videoId = item.id.videoId;
+    var title = item.snippet.title;
+    var description = item.snippet.description;
+    var thumbnail = item.snippet.thumbnails.high.url;
+    var channelTitle = item.snippet.channelTitle;
+    var videoDate = item.snippet.publishedAt;
+
+    return `<div class="col-md-5 video-thumbnail">
+
+
+<center>
+
+
+      
+
+
+
+
+
+
+
+
+    
+  
+              
+                  
+
+<a href="https://vivekfy.netlify.app/audio/?q=${videoId}"> <img src="https://img.youtube.com/vi/${videoId}/hqdefault.jpg" height="200px" width="100%"> 
+
+${title}</a> 
+
+
+
+
+
+
+
+
+                    
+                `;
+}</script>
+             
+
+
+
+
+ 
+</div></div></div></div></b>
+
+
+<script>
+  function startDictation() {
+
+    if (window.hasOwnProperty('webkitSpeechRecognition')) {
+
+      var recognition = new webkitSpeechRecognition();
+
+      recognition.continuous = false;
+      recognition.interimResults = false;
+
+      recognition.lang = "en-US";
+      recognition.start();
+
+      recognition.onresult = function(e) {
+        document.getElementById('query').value
+                                 = e.results[0][0].transcript;
+        recognition.stop();
+        document.getElementById('btn btn-primary').submit();
+      };
+
+      recognition.onerror = function(e) {
+        recognition.stop();
+      }
+
     }
-  });
+  }
 </script>
-<Style>#video {
-  width: 350px;
 
-}</Style>
+<style>
+form{
+    text-align: center;
+}
+.hold-me{max-width:50px;border: 4px solid #0075ff;
+    border-radius: 30px;
+    padding: 4px;
+    margin: 0 auto;
+    text-align: center;
+    box-shadow: 0px 6px 20px 1px #00000063;
+    margin-bottom: 0px;
+    cursor: pointer;}
+.hold-me:hover {
+    box-shadow: 0px 6px 20px 1px #3F51B5;
+    border: 1px solid #3F51B5;
+}</style>
+
+
+<style id='page-skin-1' type='text/css'>  
+  
+      
+  input[type="text"]{    
+  width:100%;    
+  height:50px;    
+  padding:0 0 0 10px;    
+  border: dashed #d12f68 4px;    
+  font-family: Bangers;    
+  }    
+  input[type="submit"]{    
+  height:52px;    
+  background: #d12f68;    
+  background-image: -webkit-linear-gradient(top, #d12f68, #0d9eff);    
+  background-image: -moz-linear-gradient(top, #d12f68, #0d9eff);    
+  background-image: -ms-linear-gradient(top, #d12f68, #0d9eff);    
+  background-image: -o-linear-gradient(top, #d12f68, #0d9eff);    
+  background-image: linear-gradient(to bottom, #d12f68, #0d9eff);    
+  border: dashed #1a1a1a 1px;    
+  -webkit-border-radius: 0;    
+  -moz-border-radius: 0;    
+  border-radius: 0px;    
+  margin:0 0 0 -2px;    
+  cursor: pointer;    
+  font-family: Georgia;    
+  text-decoration: none;    
+  color: #fff;    
+  }    
+  
+  
+  
+  </style>
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" />
+ <link href="https://fonts.googleapis.com/css2?family=Poppins&amp;display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
