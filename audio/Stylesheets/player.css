@@ -60,8 +60,8 @@
 }
 
 input[type="url"] {
-  height: 3rem;
-  width: 9rem;
+  height: 0rem;
+  width: 0rem;
 
   background: var(--accent);
   border: 1px solid var(--border);
