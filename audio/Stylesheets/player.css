@@ -64,8 +64,8 @@ input[type="url"] {
   width: 0rem;
 
   background: var(--accent);
-  border: 1px solid var(--border);
-  border-radius: 0.5rem;
+  border: 0px solid var(--border);
+  border-radius: 0rem;
   -webkit-box-shadow: 0 0.1rem 0.3rem #0003;
   box-shadow: 0 0.1rem 0.3rem #0003;
   color: var(--text);
