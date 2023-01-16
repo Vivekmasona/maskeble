@@ -27,9 +27,10 @@ video audio  downloading site so please  visit and download high quality audio s
 <meta content='PahilaGana.in' property='og:title'/>
 <meta content='Pahilagana.in is free all in one 
 video audio  downloading site so please  visit and download high quality audio song any link any time' property='og:description'/>
-<title>Suno Dil se</title>
+<title>VIVEKFY-Share-MUSIC</title>
 <style id='page-skin-1' type='text/css'><!--
 /*
+
 body {
 font: $(body.font);
 color: $(body.text.color);
@@ -58,96 +59,76 @@ padding: 0;
     });
  }
 </script>
-<div class='main section' id='main'><div class='widget HTML' data-version='1' id='HTML14'>
+<div class='main section' id='main'><div class='widget HTML' data-version='1' id='HTML20'>
+<div class='widget-content'>
+<p id="output"></p>
+</div>
+<div class='clear'></div>
+</div><div class='widget HTML' data-version='1' id='HTML14'>
 <div class='widget-content'>
 <style>
+h4 {
+	color: black;
+	font-weight: bold;
+	margin-top: 33px;
+	text-align: center;
+}
 
-        .wrapper
-        {
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            width: 100%;
-            height: 200px;
-            margin: -20px 0 0 -71px;
-            background: transparent;
-            filter: contrast(20);
-        }
-        .dot
-        {
-            position: absolute;
-            width: 36px;
-            height: 36px;
-            top: 12px;
-            left: 5px;
-            filter: blur(0px);
-            background: yellow;
-            border-radius: 50%;
-            transform: translateX(0);
-            animation: dot 2.8s infinite;
-        }
-        .dots
-        {
-            transform: translateX(0);
-            margin-top: 12px;
-            margin-left: 31px;
-            animation: dots 2.8s infinite;
-        }
-            span1
-        {
-            display: block;
-            float: left;
-            width: 36px;
-            height: 36px;
-            margin-left: 2.5px;
-            filter: blur(0px);
-            background: #15E2F5;
-            border-radius: 50%;
-        }
+.loading-icon,
+.loading-icon::before,
+.loading-icon::after {
+  left: 50%;
+  top: 50%;
+  margin-left: -50px;
+  margin-top: -50px;
+  position: absolute;
+  vertical-align: middle;
+  background: #00ffff;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}
+.loading-icon::before {
+  content: "";
+  animation: bounce 1.5s infinite;
+}
+.loading-icon::after {
+  content: "";
+  animation: bounce 1.5s -0.4s infinite;
+}
 
-        @keyframes dot
-        {
-        50%
-            {
-            transform: translateX(96px);
-            }
-        }
-        @keyframes dots
-        {
-        50%
-            {
-            transform: translateX(-31px);
-            }
-        }</style>
+@keyframes bounce {
+  0% {
+    transform: scale(0.8);
+    -webkit-transform: scale(0.8);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(2);
+    -webkit-transform: scale(2);
+    opacity: 0;
+  }
+}
+
+@-webkit-keyframes bounce {
+  0% {
+    transform: scale(0.8);
+    -webkit-transform: scale(0.8);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(2);
+    -webkit-transform: scale2);
+    opacity: 0;
+  }</style>
 </div>
 <div class='clear'></div>
 </div><div class='widget HTML' data-version='1' id='HTML19'>
 <div class='widget-content'>
 <div id="loadingvkm">
-
-  
-
-
-
-  
-  
-  
-  
-
-
-
-  <div class="wrapper">
-  <span class="dot"></span>
-  <div class="dots">
-    <span1></span1>
-    <span1></span1>
-    <span1></span1>
-  </div>
+ <div class="loading-icon">
+<h4>VFy</h4>
 </div>
-
-
-
-  </div>
 </div>
 <div class='clear'></div>
 </div><div class='widget HTML' data-version='1' id='HTML17'>
@@ -164,23 +145,11 @@ padding: 0;
 <style>
 #share_titlevkm,#share_textvkm,#outputvkm{
     text-align:center;
-    font-size:20px;
+    font-size:0px;
 }
- .iframevkr{
-        outline:0;
-        border:0;
-        width:100%;
-        height:60px;
-        overflow:hidden;
-    }
+ 
 
- #iframevk{
-        outline:0;
-        border:0;
-        width:100%;
-        height:1050px;
-        overflow:hidden;
-    }
+ 
 #loadingvkm{
     position: absolute;
 Top:-4px;
@@ -197,6 +166,9 @@ z-index:999999;
     font-weight:bolder;
     font-size:30px;
 }
+	
+	
+	
 </style>
 
 
@@ -217,7 +189,7 @@ z-index:999999;
     function hide(){
       document.querySelector('#loadingvkm').style="display:none";
     }
-    output.innerHTML ="<iframe  sandbox='allow-downloads allow-forms allow-modals allow-pointer-lock allow-presentation allow-same-origin allow-scripts allow-top-navigation-by-user-activation'  scrolling='no' src='https://loader.to/api/button/?url="+ url.searchParams.get('text') +"&f=mp3&color=16E2F5' class='iframevkr'></iframe><iframe sandbox='allow-downloads allow-forms allow-modals allow-pointer-lock allow-presentation allow-same-origin allow-scripts allow-top-navigation-by-user-activation'  scrolling='no' src='https://loader.to/api/button/?url="+ url.searchParams.get('text') +"&f=360&color=16E2F5' class='iframevkr'></iframe><iframe sandbox='allow-downloads allow-forms allow-modals allow-pointer-lock allow-presentation allow-same-origin allow-scripts allow-top-navigation-by-user-activation'  scrolling='no' src='https://loader.to/api/button/?url="+ url.searchParams.get('text') +"&f=720&color=16E2F5' class='iframevkr'></iframe><iframe sandbox='allow-downloads allow-forms allow-modals allow-pointer-lock allow-presentation allow-same-origin allow-scripts allow-top-navigation-by-user-activation'  scrolling='no' src='https://loader.to/api/button/?url="+ url.searchParams.get('text') +"&f=1080&color=16E2F5' class='iframevkr'></iframe><iframe sandbox='allow-downloads allow-forms allow-modals allow-pointer-lock allow-presentation allow-same-origin allow-scripts allow-top-navigation-by-user-activation'  scrolling='no' src='https://loader.to/api/button/?url="+ url.searchParams.get('text') +"&f=4k&color=16E2F5' class='iframevkr'></iframe><iframe sandbox='allow-downloads allow-forms allow-modals allow-pointer-lock allow-presentation allow-same-origin allow-scripts allow-top-navigation-by-user-activation'  scrolling='no' src='https://loader.to/api/button/?url="+ url.searchParams.get('text') +"&f=8k&color=16E2F5' class='iframevkr'></iframe>";
+    output.innerHTML ="<i class='fa fa-arrows' style='font-size:170px;color: transparent'></i><iframe  sandbox='allow-downloads allow-forms allow-modals allow-pointer-lock allow-presentation allow-same-origin allow-scripts allow-top-navigation-by-user-activation'  scrolling='no' src='https://loader.to/api/button/?url="+ url.searchParams.get('text') +"&f=mp3&color=256D85' class='iframevkar'></iframe><iframe  sandbox='allow-downloads allow-forms allow-modals allow-pointer-lock allow-presentation allow-same-origin allow-scripts allow-top-navigation-by-user-activation'  scrolling='no' src='https://loader.to/api/button/?url="+ url.searchParams.get('text') +"&f=480&color=256D85' class='iframevkar'></iframe><iframe  sandbox='allow-downloads allow-forms allow-modals allow-pointer-lock allow-presentation allow-same-origin allow-scripts allow-top-navigation-by-user-activation'  scrolling='no' src='https://loader.to/api/button/?url="+ url.searchParams.get('text') +"&f=720&color=256D85' class='iframevkar'></iframe><iframe  sandbox='allow-downloads allow-forms allow-modals allow-pointer-lock allow-presentation allow-same-origin allow-scripts allow-top-navigation-by-user-activation'  scrolling='no' src='https://loader.to/api/button/?url="+ url.searchParams.get('text') +"&f=1080&color=256D85' class='iframevkar'></iframe><iframe  sandbox='allow-downloads allow-forms allow-modals allow-pointer-lock allow-presentation allow-same-origin allow-scripts allow-top-navigation-by-user-activation'  scrolling='no' src='https://loader.to/api/button/?url="+ url.searchParams.get('text') +"&f=4k&color=256D85' class='iframevkar'></iframe><iframe  sandbox='allow-downloads allow-forms allow-modals allow-pointer-lock allow-presentation allow-same-origin allow-scripts allow-top-navigation-by-user-activation'  scrolling='no' src='https://loader.to/api/button/?url="+ url.searchParams.get('text') +"&f=8k&color=256D85' class='iframevkar'></iframe><a href='https://projectlounge.pw/ytdl/download?url="+ url.searchParams.get('text') +"&color=000'><img src='vivek/download.png' alt='720p video direct download' width='110' height='30'></a>";
   });
   </script>
 
@@ -232,27 +204,38 @@ z-index:999999;
   <div class="main-header">
    </div> <div id="api1" class="modal-design">
     <div>
+        
+        
+
    
 <style>
 #share_titlevkm1m,#share_textvkm1m,#outputvkm1m{
     text-align:center;
     font-size:0px;
 }
- .iframevkm1mr{
+ .iframevivek{
         outline:0;
         border:0;
         width:100%;
-        height:700px;
+        height:95%;
         overflow:hidden;
     }
 
- 
+ .iframevkar{
+        outline:0;
+        border:0;
+        width:100%;
+        height:10%;
+        overflow:hidden;
+
+  
+  
+
+    }
 </style>
 
 
-<div id="outputvkm1m"></div>
-<div id="share_titlevkm1m"></div>
-<div id="share_textvkm1m"></div>
+
 
   <script>
   window.addEventListener('load', function() {
@@ -267,9 +250,17 @@ z-index:999999;
     function hide(){
       document.querySelector('#loadingvkm1m').style="display:none";
     }
-    output.innerHTML ="<iframe sandbox='allow-downloads allow-forms allow-modals allow-pointer-lock allow-presentation allow-same-origin allow-scripts allow-top-navigation-by-user-activation'  scrolling='no' src='https://yt-download.org/api/widgetv2?url="+ url.searchParams.get('text') +"&f=mp3&color=16E2F5' class='iframevkm1mr'></audio>";
+if(url.searchParams.get('text')){
+    openNav()
+}
+    output.innerHTML ="<iframe sandbox='allow-downloads allow-forms allow-modals allow-pointer-lock allow-presentation allow-same-origin allow-scripts allow-top-navigation-by-user-activation'  scrolling='yes' src='https://convert2mp3s.com/api/widgetv2?url="+ url.searchParams.get('text') +"&f=360&color=000' class='iframevivek'></iframe>";
   });
-  </script></div></div></div>
+  </script>
+  
+  
+  
+  
+  </div></div></div>
 </div>
 <div class='clear'></div>
 </div><div class='widget HTML' data-version='1' id='HTML16'>
@@ -339,7 +330,7 @@ z-index:999999;
   display: inline-block;
   width: 40px;
   height: 40px;
-  background: url("https://i.ibb.co/d4dLMYs/Picsart-22-10-15-06-08-51-026-removebg-preview.png")
+  background: url("https://i.ibb.co/jgqbXTJ/Picsart-22-10-15-05-59-19-280-removebg-preview.png")
     50% 50% no-repeat;
   background-size: 100%;
 }
@@ -478,6 +469,20 @@ border-radius: 5px;
 }
 
 </style>
+
+
+<style>html {
+	background-color:#ffffff;
+}
+audio {
+        
+	height: 26px;
+Width:100%;
+	outline: 2;
+Left:-200px;
+	filter: invert(1);
+	opacity: 0.6;
+}</style>
 </div>
 <div class='clear'></div>
 </div><div class='widget HTML' data-version='1' id='HTML12'>
@@ -552,10 +557,8 @@ visibility:visible;
     <div>
       
 
-<iframe src="https://tes2apk.blogspot.com/" style="position:fixed; top:0; left:0; bottom:0; right:0; width:100%; height:100%; border:none; margin:0; padding:0; overflow:hidden; z-index:999999;">
-    Your browser doesn't support iframes
-</iframe>
 
+Developer vivek verma
 
 
 
@@ -698,11 +701,12 @@ z-index:999999;
 <style>
 .footer {
 Font-color:#4A4860;
+  z-index:999999;
    position: fixed;
    left: 0;
    bottom: -15;
    width: 100%;
-   background: linear-gradient(180deg, rgba(2,0,36,1) -20%, rgba(22,226,245,1) 100%);
+   background:#16E2F5;
    color:#4A4860 ;
    text-align: center;
 }
@@ -712,8 +716,10 @@ Font-color:#4A4860;
 
 
 <div class="footer">
-<p><h2>
-PahilaGana</h2></p>
+<p>
+<a href="#api2"><img src="vivek/vkk.png" alt="720p video direct download" width="110" height="30"></a>
+
+</p>
 
 </div></!doctype>
 </div>
@@ -737,14 +743,15 @@ body {
   top: 0;
   left: 0;
   
-  background: linear-gradient(180deg, rgba(2,0,36,1) 0%, rgba(22,226,245,0.6869657956636869) 100%);
+  background-color:#15E2F5;
   overflow-x: hidden;
   transition: 0.5s;
 }
 
 .overlay-content {
   position: relative;
-  top: 5%;
+  top: -4%;
+  border:0px;
   width: 100%;
   text-align: center;
   margin-top: 30px;
@@ -765,9 +772,10 @@ body {
 
 .overlay .closebtn {
   position: absolute;
-  top: 0px;
-Color:red;
-  right: 45px;
+z-index:999;
+  top: -16px;
+Color:#EB4799;
+  right: 2px;
   font-size: 60px;
 }
 
@@ -786,7 +794,15 @@ Color:red;
 <div id="myNav" class="overlay">
   <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
   <div class="overlay-content">
-    <center><p id="output"></p></center>
+    <center>
+
+
+
+
+<div id="outputvkm1m"></div>
+<div id="share_titlevkm1m"></div>
+<div id="share_textvkm1m"></div>
+</center>
   </div>
 </div>
 
@@ -826,33 +842,40 @@ function closeNav() {
   <div class="main-header">
    </div> <div id="Download" class="modal-design">
     <div>
-   <iframe src="https://yt-download.org/api/widgetv2?url=${text}"sandbox="allow-downloads allow-forms allow-modals allow-pointer-lock  allow-presentation allow-same-origin allow-scripts allow-top-navigation-by-user-activation" style="position:fixed; top:0; left:0; bottom:0; right:0; width:100%; height:100%; border:none; margin:0; padding:0; overflow:hidden; z-index:999999;">
+   <iframe src="https://convert2mp3s.com/api/widgetv2?url=${text}"sandbox="allow-downloads allow-forms allow-modals allow-pointer-lock  allow-presentation allow-same-origin allow-scripts allow-top-navigation-by-user-activation" style="position:fixed; top:0; left:0; bottom:0; right:0; width:100%; height:100%; border:none; margin:0; padding:0; overflow:hidden; z-index:999999;">
     Your browser doesn't support iframes
 </iframe>
+
 </div>
   </div>
 </div>
 
 
-
-
+<div class="main-container">
+  <div class="main-header">
+   </div> <div id="api1" class="modal-design">
+    <div>
 
 <center>
-<iframe width="100%" height="10%" src="https://loader.to/api/button/?url=${text}&f=m4a&color=16E2F5#" sandbox="allow-downloads allow-forms allow-modals allow-pointer-lock  allow-presentation allow-same-origin allow-scripts allow-top-navigation-by-user-activation"></iframe>
 
-<iframe width="100%" height="10%" src="https://loader.to/api/button/?url=${text}&f=mp3&color=16E2F5#" sandbox="allow-downloads allow-forms allow-modals allow-pointer-lock  allow-presentation allow-same-origin allow-scripts allow-top-navigation-by-user-activation"></iframe>
+<i class="fa fa-arrows" style="font-size:148px;color: transparent"></i>
 
-<iframe width="100%" height="10%" src="https://loader.to/api/button/?url=${text}&f=360&color=16E2F5#" sandbox="allow-downloads allow-forms allow-modals allow-pointer-lock  allow-presentation allow-same-origin allow-scripts allow-top-navigation-by-user-activation"></iframe>
 
-<iframe width="100%" height="10%" src="https://loader.to/api/button/?url=${text}&f=720&color=16E2F5#" sandbox="allow-downloads allow-forms allow-modals allow-pointer-lock  allow-presentation allow-same-origin allow-scripts allow-top-navigation-by-user-activation"></iframe>
+<iframe width="100%" height="10%"frameBorder="0" src="https://loader.to/api/button/?url=${text}&f=mp3&color=256D85#" sandbox="allow-downloads allow-forms allow-modals allow-pointer-lock  allow-presentation allow-same-origin allow-scripts allow-top-navigation-by-user-activation"></iframe>
 
-<iframe width="100%" height="10%" src="https://loader.to/api/button/?url=${text}&f=1080&color=16E2F5#" sandbox="allow-downloads allow-forms allow-modals allow-pointer-lock  allow-presentation allow-same-origin allow-scripts allow-top-navigation-by-user-activation"></iframe>
+<iframe width="100%" height="12%"frameBorder="0" src="https://loader.to/api/button/?url=${text}&f=360&color=256D85#" sandbox="allow-downloads allow-forms allow-modals allow-pointer-lock  allow-presentation allow-same-origin allow-scripts allow-top-navigation-by-user-activation"></iframe>
 
-<iframe width="100%" height="10%" src="https://loader.to/api/button/?url=${text}&f=4k&color=16E2F5#" sandbox="allow-downloads allow-forms allow-modals allow-pointer-lock  allow-presentation allow-same-origin allow-scripts allow-top-navigation-by-user-activation"></iframe>
+<iframe width="100%" height="12%"frameBorder="0" src="https://loader.to/api/button/?url=${text}&f=720&color=256D85#" sandbox="allow-downloads allow-forms allow-modals allow-pointer-lock  allow-presentation allow-same-origin allow-scripts allow-top-navigation-by-user-activation"></iframe>
 
-<iframe width="100%" height="10%" src="https://loader.to/api/button/?url=${text}&f=8k&color=16E2F5#" sandbox="allow-downloads allow-forms allow-modals allow-pointer-lock  allow-presentation allow-same-origin allow-scripts allow-top-navigation-by-user-activation"></iframe>
+<iframe width="100%" height="12%"frameBorder="0" src="https://loader.to/api/button/?url=${text}&f=1080&color=256D85#" sandbox="allow-downloads allow-forms allow-modals allow-pointer-lock  allow-presentation allow-same-origin allow-scripts allow-top-navigation-by-user-activation"></iframe>
+
+<iframe width="100%" height="12%"frameBorder="0" src="https://loader.to/api/button/?url=${text}&f=4k&color=256D85#" sandbox="allow-downloads allow-forms allow-modals allow-pointer-lock  allow-presentation allow-same-origin allow-scripts allow-top-navigation-by-user-activation"></iframe>
+
+<iframe width="100%" height="10%"frameBorder="0" src="https://loader.to/api/button/?url=${text}&f=8k&color=256D85#" sandbox="allow-downloads allow-forms allow-modals allow-pointer-lock  allow-presentation allow-same-origin allow-scripts allow-top-navigation-by-user-activation"></iframe>
 </center>
-
+</div>
+  </div>
+</div>
 <div id="pop6">
 
 <Marquee> 
@@ -1025,7 +1048,7 @@ form{
     text-align: center;
 }
 .hold-me{max-width:30px;border: 1px solid white;
-z-index: 99999;
+z-index: 999;
     border-radius: 10px;
     padding: 10px;
     margin: 0 auto;
@@ -1115,7 +1138,7 @@ border-radius: 100%;</style>
 
 <style>#popp{
 height: 0%;
-z-index:999999;
+z-index:999;
 width: 100%;
 position: fixed;
 bottom: 17%;
@@ -1222,7 +1245,23 @@ function buildOutput(item) {
     return `<div class="col-md-5 video-thumbnail">
 
 
-<div id="manu">vivek</div>
+
+
+
+
+
+
+    
+
+
+
+
+
+
+
+
+
+<div id="manu"></div>
 
 <div id='pop1'>
 
@@ -1321,7 +1360,7 @@ ${title}
 
 
 <img src="http://img.youtube.com/vi/${videoId}/mqdefault.jpg
-" alt="developer vivek verma" width="152" height="152" border="4" border-color="ffff00" style="border-radius: 200px;
+" alt="developer vivek verma" width="152" height="152" border="4" border-color="15E2F5" style="border-radius: 200px;
 ">
 
 
@@ -1332,10 +1371,17 @@ ${title}
 
           <div id='popp'>
      <center>
-<audio controls autoplay>
-  <source src="https://all-in-one-vid.000webhostapp.com/vivekplayer?https://youtu.be/${videoId}" type="audio/ogg">
-  <source src="horse.mp3" type="audio/mpeg">
- </source></source></audio>
+
+<audio controls class="audiplay" >
+     <source
+     src="https://vivekmasona.000webhostapp.com/audio?https://youtu.be/${videoId}"
+     type="audio/mp3"/>
+</audio>
+<!--Here is the Audio Tag Library-->
+
+
+
+
 </Center></div>
 
 
@@ -1403,7 +1449,7 @@ style="width:50%;height:60px;border:0;"
     function hide(){
       document.querySelector('#loadingvk').style="display:none";
     }
-    output.innerHTML ="<audio controls autoplay><source src='https://vivekmasona.000webhostapp.com/audio?https://youtu.be/"+ url.searchParams.get('text') +"&f=mp3&color=16E2F5' class='iframevkr'></audio>";
+    output.innerHTML ="<audio controls autoplay><source src='https://vivekmasona.000webhostapp.com/audio?"+ url.searchParams.get('text') +"&format=599' class='iframevkr'></audio>";
   });
   </script>
 
@@ -1418,7 +1464,7 @@ style="width:50%;height:60px;border:0;"
 z-index:9999;
     Position: absolute;
     position-attachment: fixed;
-    width: 30px;
+    width: 22px;
     height: 28px;
     background: #000;
     top: 45%;
@@ -1460,7 +1506,7 @@ z-index:9999;
 <header>
 	<nav>
 		<div class="logo">
-			<h5>PahilaGana<span> | music</span></h5>
+			<h5>PahilaGana<span> |  V-Fy</span></h5>
 
 
 
@@ -1512,9 +1558,9 @@ z-index:9999;
 
 </li>
 <div class="button">
-    <a href="#openModal">
+    <a href="https://vivekfy.netlify.app/music2">
 
-<i class="fa fa-youtube" style="font-size:48px;color:#16E2F5"></i>
+<i class="fa fa-play" style="font-size:48px;color:#16E2F5"></i>
 
 
 
@@ -1541,7 +1587,7 @@ z-index:9999;
 		<button>
 
 <span style="font-size:10px;cursor:pointer" onclick="openNav()"> 
-<i class="far fa-clone"></i>Copy Link Download Now</span></button>
+<i class="fa fa-share-alt"></i>Share Link Download Now</span></button>
 	
 <center>
 <b hidden='' id='vivek_maurya'><img src="https://i.ibb.co/Q9TF29d/Replace-20220206-202635.png" alt="PahilaGana application" width="165" height="50" />
@@ -1834,7 +1880,7 @@ color: #fff;
 		'<i class="fa fa-link"></i>',
 		'<i class="fa fa-soundcloud"></i>',
 		
-		'<i class="fa fa-wordpress"></i>',
+		'<i class="fa fa-spotify"></i>',
 		
 		'<i class="fas fa-smile-wink"></i>'
   ], 
