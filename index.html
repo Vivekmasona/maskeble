@@ -1374,7 +1374,7 @@ ${title}
 
 <audio controls class="audiplay" >
      <source
-     src="https://vivekmasona.000webhostapp.com/audio?https://youtu.be/${videoId}"
+     src="https://vivekmasona.000webhostapp.com/play?vfy=https://youtu.be/${videoId}"
      type="audio/mp3"/>
 </audio>
 <!--Here is the Audio Tag Library-->
@@ -1449,7 +1449,7 @@ style="width:50%;height:60px;border:0;"
     function hide(){
       document.querySelector('#loadingvk').style="display:none";
     }
-    output.innerHTML ="<audio controls autoplay><source src='https://vivekmasona.000webhostapp.com/audio?"+ url.searchParams.get('text') +"&format=599' class='iframevkr'></audio>";
+    output.innerHTML ="<audio controls autoplay><source src='https://vivekmasona.000webhostapp.com/play?vfy="+ url.searchParams.get('text') +"&format=599' class='iframevkr'></audio>";
   });
   </script>
 
