@@ -1,7 +1,7 @@
 <?php
      error_reporting(0);
         $vidUrl = $_SERVER['REQUEST_URI'];
-$videoVid = explode("vkr=", $vidUrl);
+$videoVid = explode("vfy=https://youtu.be/", $vidUrl);
         $videoVid = $videoVid[1];
         $vidDe = urldecode($videoVid);
         $vidEn = urlencode($videoVid);
