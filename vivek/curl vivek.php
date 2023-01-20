@@ -1,13 +1,13 @@
 <?php
      error_reporting(0);
         $vidUrl = $_SERVER['REQUEST_URI'];
-$videoVid = explode("vkr=", $vidUrl);
+$videoVid = explode("vfy=", $vidUrl);
         $videoVid = $videoVid[1];
         $vidDeE = urldecode($videoVid);
         preg_match('%(?:youtube(?:-nocookie)?\.com/(?:[^/]+/.+/|(?:v|e(?:mbed)?)/|.*[?&]v=)|youtu\.be/)([^"&?/ ]{11})%i', $vidDeE, $match);
 $vidDe = $match[1];
         $vidEn = urlencode($videoVid);
-$url = "https://videoserver-a2ys.onrender.com/get?url=https://youtu.be/$vidDe";
+$url = "https://vivekfy.onrender.com/get?url=https://youtu.be/$vidDe";
 if(!empty($vidDe)){
                
 $curl = curl_init($url);
