@@ -72,11 +72,11 @@
   "shortcuts": [
 
     {
-      "name": "VFy-Copy-DL",
+      "name": "VFy-MUSIC",
       "url": "/directdl",
       "icons": [
         {
-          "src": "/logo/ddl.png",
+          "src": "/logo/vkji.png",
           "type": "image/png",
           "sizes": "192x192"
         }
