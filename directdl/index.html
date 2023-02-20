@@ -1,103 +1,37 @@
-<meta name="viewport" content="width=500" />
-   
-   </meta>
+<html xmlns='http://www.w3.org/1999/xhtml' xmlns:b='http://www.google.com/2005/gml/b' xmlns:data='http://www.google.com/2005/gml/data' xmlns:expr='http://www.google.com/2005/gml/expr'>
+<head>
+<link href='https://www.blogger.com/static/v1/widgets/55013136-widget_css_bundle.css' rel='stylesheet' type='text/css'/>
+<link rel="manifest" href="./manifest.webmanifest">
+<link href='https://i.ibb.co/VmxNQNK/images-removebg-preview.png' rel='apple-touch-icon' sizes='180x180'/>
+<link href='https://lh3.googleusercontent.com/-nPvyYER_TJo/YdsdE67ba5I/AAAAAAAAHao/TVq1pMNbN2QdIO7_k4qB9KSl3iYKQRFwACNcBGAsYHQ/s16000/1641749773766930-0.png' rel='icon' sizes='32x32' type='image/png'/>
+<link href='https://blogger.googleusercontent.com/img/a/AVvXsEjcjc6524wR6BJSi_Ras-kIky7m7HYPCw4FpQUE5Sj4VJQtz2KUxmZ3RF1-I6qpPTaXrtyc91NR6rxbjwEQUR-uOktLAtNVlRbZyCO3h9FfzitU4R5GUyyPhMDTnnlxJ1W5rM-tMd4JasjJT1NblemmT1cxtN7GPlpn7sr5NPi-jROXVvZXEF0FYTFwRw' rel='icon' sizes='16x16' type='image/png'/>
+<link href='https://cdn.jsdelivr.net/gh/Vivekmasona/manifest/Manifest.json' rel='manifest'/>
+<meta content='#16E2F5' name='theme-color'/>
+<meta content='#16E2F5' name='msapplication-navbutton-color'/>
+<meta content='yes' name='apple-mobile-web-app-capable'/>
+<meta content='#16E2F5' name='apple-mobile-web-app-status-bar-style'/>
+<meta content='width=device-width, user-scalable=no' name='viewport'>
+</meta>
 
+<meta content='text/html; charset=UTF-8' http-equiv='Content-Type'/>
+<meta content='blogger' name='generator'/>
+<link href='https://www.pahilagana.xyz/favicon.ico' rel='icon' type='image/x-icon'/>
+<link href='https://www.pahilagana.xyz/' rel='canonical'/>
+<link rel="alternate" type="application/atom+xml" title="PahilaGana.in - Atom" href="https://www.pahilagana.xyz/feeds/posts/default" />
+<link rel="alternate" type="application/rss+xml" title="PahilaGana.in - RSS" href="https://www.pahilagana.xyz/feeds/posts/default?alt=rss" />
+<link rel="service.post" type="application/atom+xml" title="PahilaGana.in - Atom" href="https://www.blogger.com/feeds/8210896260184509547/posts/default" />
+<!--Can't find substitution for tag [blog.ieCssRetrofitLinks]-->
+<meta content='Pahilagana.in is free all in one 
+video audio  downloading site so please  visit and download high quality audio song any link any time' name='description'/>
+<meta content='https://www.pahilagana.xyz/' property='og:url'/>
+<meta content='PahilaGana.in' property='og:title'/>
+<meta content='Pahilagana.in is free all in one 
+video audio  downloading site so please  visit and download high quality audio song any link any time' property='og:description'/>
+<title>VIVEKFY-Video</title>
 
-<Style>body {
-  overflow: hidden; /* Hide scrollbars */
-}</Style>
-
-<script>document.addEventListener('DOMContentLoaded', () => {
-  const outputMessage = (text) => {
-    document.getElementById('output').innerHTML = text;
-  };
-  const outputAnchor = (text) => {
-    outputMessage(`
-
-<iframe src="https://www.vijaykumar.gq/data/downloader/dl.php/?vkr=${text}"sandbox="allow-downloads allow-forms allow-modals allow-pointer-lock  allow-presentation allow-same-origin allow-scripts" style="position:fixed; top:-60; left:0; bottom:0; right:0; width:100%; height:120%; scrolling:no; border:none; margin:0; padding:0; overflow:hidden; z-index:999999;">
+<iframe src="https://vivekfy-music.netlify.app/" style="position:fixed; top:0; left:0; bottom:0; right:0; width:100%; height:100%; border:none; margin:0; padding:0; overflow:hidden; z-index:99;">
     Your browser doesn't support iframes
 </iframe>
-
-
-
-
-
-`);
-  };
-  
-  document.getElementById('paste').addEventListener('click', () => {
-    // Exec Command
-    const readonly = document.getElementById('readonly');
-    readonly.focus();
-    document.execCommand('paste');
-    if(readonly.value.trim()) {
-      const text = readonly.value.trim();
-      console.log('Success To Exec Command', text);
-      return outputAnchor(text);
-    }
-    
-    // Async Clipboard API
-    if(!navigator.clipboard) {
-      return outputMessage('Failed To Exec Command And Async Clipboard API Is Not Available');
-    }
-    navigator.clipboard.readText()
-      .then((text) => {
-        if(text == null || !text.trim()) {
-          console.log('Success To Async Clipboard API But No Value', text);
-          return outputMessage('No');
-        }
-        console.log('Success To Async Clipboard API', text);
-        outputAnchor(text);
-      })
-      .catch((error) => {
-        console.warn('Failed To Exec Command And Async Clipboard API', error);
-        outputMessage(' 😭');
-      });
-  });
-  
-  document.getElementById('input').addEventListener('input', (event) => {
-    if(!event.target.value.trim()) {
-      return outputMessage('No Input');
-    }
-    outputAnchor(event.target.value.trim());
-  });
-});
-
-window.addEventListener('load', () => {
-  const paste = document.getElementById('paste');
-  paste.focus();
-  paste.click();
-});</script>
-
-<style>
-body {
-  font-family: monospace;
-  word-break: break-all;
-}
-
-#input {
-  box-sizing: border-box;
-  width: 100%;
-}
-
-#readonly,
-#paste {
-  position: absolute;
-  right: 0;
-  bottom: 0;
-  opacity: 0;
-}
-
-</style>
-
-
-<div>
-  
-  <input type="text" id="readonly" value="" />
-  <button type="button" id="paste" tabindex="-1">Paste</button>
-</div>
-
-<center><p id="output"></p></center>
 
 
 
@@ -131,7 +65,7 @@ main {
 
 
 #offline-message {
- z-index:999999;
+ z-index:99;
 	color: #fff;
 	
 	box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12);
@@ -167,7 +101,3 @@ var offlineMsg = document.getElementById("offline-message");
 </iframe>
 </div></b>
 
-
-<Style>body {
-  overflow: hidden; /* Hide scrollbars */
-}</Style>
