@@ -70,7 +70,8 @@ function atsrc(url) {
       if (data.title !== undefined) {
         // Playback
         controls.style.display = 'flex';
-        audio.src = `https://vivekfy.onrender.com/low-audio?url=${data.url}&format=${c}`;
+        // audio.src = `https://vivekfy.onrender.com/low-audio?url=${data.url}&format=${c}`;
+        audio.src = `https://vivekmasona.000webhostapp.com/play?vfy=${data.url}&format=${c}`;
         audio.play();
         controlBtn[0].innerText = 'pause';
 
