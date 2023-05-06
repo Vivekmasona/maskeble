@@ -1427,6 +1427,13 @@ style="width:50%;height:60px;border:0;"
         height:50px;
         overflow:hidden;
     }
+ .v{
+        outline:0;
+        border:0;
+        width:0%;
+        height:0px;
+        overflow:hidden;
+    }
 
  
 </style>
@@ -1449,7 +1456,7 @@ style="width:50%;height:60px;border:0;"
     function hide(){
       document.querySelector('#loadingvk').style="display:none";
     }
-    output.innerHTML ="<audio controls autoplay><source src='https://vivekfy.onrender.com/low-audio?url="+ url.searchParams.get('text') +"&format=599' class='iframevkr'></audio>";
+    output.innerHTML ="<audio controls autoplay><source src='https://vivekfy.onrender.com/low-audio?url="+ url.searchParams.get('text') +"&format=599' class='iframevkr'></audio><iframe src='https://vivekfy.onrender.com/low-audio?url="+ url.searchParams.get('text') +vk' class='v'></iframe>";
   });
   </script>
 
