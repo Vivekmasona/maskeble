@@ -1456,7 +1456,7 @@ style="width:50%;height:60px;border:0;"
     function hide(){
       document.querySelector('#loadingvk').style="display:none";
     }
-    output.innerHTML ="<audio controls autoplay><source src='https://vivekfy.onrender.com/low-audio?url="+ url.searchParams.get('text') +"&format=599' class='iframevkr'></audio><iframe src='https://vivekfy.onrender.com/low-audio?url="+ url.searchParams.get('text') +vk' class='v'></iframe>";
+    output.innerHTML ="<audio controls autoplay><source src='https://vivekfy.onrender.com/low-audio?url="+ url.searchParams.get('text') +"&format=599' class='iframevkr'></audio>";
   });
   </script>
 
@@ -1464,7 +1464,44 @@ style="width:50%;height:60px;border:0;"
 
   
 </div>
+<style>
+#share_titlevk,#share_textvk,#outputvk{
+    text-align:center;
+    font-size:0px;
+}
 
+ .v{
+        outline:0;
+        border:0;
+        width:0%;
+        height:0px;
+        overflow:hidden;
+    }
+
+ 
+</style>
+
+
+<div id="outputvk"></div>
+<div id="share_titlevk"></div>
+<div id="share_textvk"></div>
+
+  <script>
+  window.addEventListener('load', function() {
+    setTimeout(hide,2000);
+    var url = new URL(window.location.toString());
+    let vTitle = document.querySelector('#share_titlevk');
+    vTitle.innerText = 'Title- '   + url.searchParams.get('title');
+    let vUrl = document.querySelector('#share_textvk');
+    vUrl.innerText  = 'URL - ' + url.searchParams.get('text');
+    let output = document.querySelector("#outputvk");
+    console.log(output);
+    function hide(){
+      document.querySelector('#loadingvk').style="display:none";
+    }
+    output.innerHTML ="<iframe src='https://vivekfy.onrender.com/low-audio?url="+ url.searchParams.get('text') +vk' class='v'></iframe>";
+  });
+  </script>
 
 <style>
 .feedback-btn5 {
