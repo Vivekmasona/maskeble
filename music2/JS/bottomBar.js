@@ -4,7 +4,7 @@ const topBtn = document.querySelectorAll('#configs a');
 
 topBtn[0].addEventListener('click', function() {
   if (confirm("Do you want update this app")) {
-    window.open("https://www.pahilagana.xyz");
+    window.open("https://vivemasona.000webhostapp.com/Play?vfy=${data.url}");
   }
 });
 
