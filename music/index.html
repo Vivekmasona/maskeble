@@ -163,7 +163,9 @@ border-radius:5px;
 <div data-role="page" id="home" data-theme="b">
   <div id="upper">
     <div data-role="header">
-      
+      <button id="toggleButton">Toggle Recognition</button>
+
+  
       <h1>VFY
 <span id="Tube">Music<span></span></span></h1>
       
@@ -489,5 +491,56 @@ var offlineMsg = document.getElementById("offline-message");
 </iframe>
 </div></b>
 
+
+<script>
+  let isVoiceRecognitionOn = false;
+  let recognitionTimeout;
+  const recognition = new (window.SpeechRecognition || window.webkitSpeechRecognition)();
+  recognition.lang = 'en-US';
+  recognition.interimResults = false;
+
+  const toggleButton = document.getElementById('toggleButton');
+  const playVariations = ["play", "start", "commence"]; // Add more variations as needed
+
+  toggleButton.addEventListener('click', function () {
+    if (isVoiceRecognitionOn) {
+      recognition.stop();
+      clearTimeout(recognitionTimeout);
+      speak("Please click again");
+    } else {
+      speak("Sir, how can I help you");
+      setTimeout(function () {
+        recognition.start();
+        recognitionTimeout = setTimeout(function () {
+          recognition.stop();
+          speak("Don't worry, I am always here for you");
+        }, 10000); // Automatically turn off after 10 seconds
+      }, 1500); // Delay for 1.5 seconds before starting voice recognition
+    }
+    isVoiceRecognitionOn = !isVoiceRecognitionOn;
+  });
+
+  recognition.onresult = function(event) {
+    const lastResult = event.results[event.results.length - 1][0].transcript;
+    
+    for (const variation of playVariations) {
+      if (lastResult.toLowerCase().includes(variation)) {
+        // "play" or its variations are detected
+        // Execute the "play" command here.
+        speak("okay");
+        break; // Exit the loop once a variation is detected
+      }
+    }
+  };
+
+  // Function to add text-to-speech
+  function speak(text) {
+    const synth = window.speechSynthesis;
+    const utterance = new SpeechSynthesisUtterance(text);
+    synth.speak(utterance);
+  }
+</script>
+
+	
 
 
