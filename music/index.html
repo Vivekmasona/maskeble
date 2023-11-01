@@ -1,10 +1,8 @@
-
-
 <link href='https://www.blogger.com/static/v1/widgets/55013136-widget_css_bundle.css' rel='stylesheet' type='text/css'/>
 <link rel="manifest" href="./manifest.webmanifest">
-<link href='https://i.ibb.co/VmxNQNK/images-removebg-preview.png' rel='apple-touch-icon' sizes='180x180'/>
-<link href='https://source.unsplash.com/random/100x100/?girl' rel='icon' sizes='32x32' type='image/png'/>
-<link href='https://blogger.googleusercontent.com/img/a/AVvXsEjcjc6524wR6BJSi_Ras-kIky7m7HYPCw4FpQUE5Sj4VJQtz2KUxmZ3RF1-I6qpPTaXrtyc91NR6rxbjwEQUR-uOktLAtNVlRbZyCO3h9FfzitU4R5GUyyPhMDTnnlxJ1W5rM-tMd4JasjJT1NblemmT1cxtN7GPlpn7sr5NPi-jROXVvZXEF0FYTFwRw' rel='icon' sizes='16x16' type='image/png'/>
+<link href='/img/mylogo.png' rel='apple-touch-icon' sizes='180x180'/>
+<link href='/img/mylogo.png' rel='icon' sizes='32x32' type='image/png'/>
+<link href='/img/mylogo.png' rel='icon' sizes='16x16' type='image/png'/>
 <link href='https://cdn.jsdelivr.net/gh/Vivekmasona/manifest/Manifest.json' rel='manifest'/>
 <meta content='#16E2F5' name='theme-color'/>
 <meta content='#16E2F5' name='msapplication-navbutton-color'/>
@@ -16,22 +14,236 @@
 <meta content='text/html; charset=UTF-8' http-equiv='Content-Type'/>
 <meta content='blogger' name='generator'/>
 <link href='https://www.pahilagana.xyz/favicon.ico' rel='icon' type='image/x-icon'/>
-<link href='https://vivekfy.onrender.com/' rel='canonical'/>
+<link href='https://vfy-live.netlify.app/Vivek' rel='canonical'/>
 <link rel="alternate" type="application/atom+xml" title="PahilaGana.in - Atom" href="https://www.pahilagana.xyz/feeds/posts/default" />
 <link rel="alternate" type="application/rss+xml" title="PahilaGana.in - RSS" href="https://www.pahilagana.xyz/feeds/posts/default?alt=rss" />
 <link rel="service.post" type="application/atom+xml" title="PahilaGana.in - Atom" href="https://www.blogger.com/feeds/8210896260184509547/posts/default" />
 <!--Can't find substitution for tag [blog.ieCssRetrofitLinks]-->
-<meta content='VFY is Online YouTube Music 🎵 Player' name='description'/>
-<meta content='https://vivekfy.onrender.com/' property='og:url'/>
+<meta content='VFY is Online YouTube Music  Player' name='description'/>
+<meta content='https://Vfy-live.netlify.app/Vivek' property='og:url'/>
 <meta content='https://vivekfy.onrender.com/' property='og:title'/>
-<meta content='vivekfy is free all in one 
-video audio  downloading site so please  visit and download high quality audio song any link any time' property='og:description'/>
-<title>MUSICFY</title>
+<meta content='vivefy:-vfy is smart online music player and downloader developer vivek masona' property='og:description'/>
+<title>VIVEKFY-AI</title>
+
+
+
+
+<audio id="myAudio" src="/sound/Sound.mp3"></audio>
+
+<script>
+  // Audio element ko select karein
+  var audio = document.getElementById("myAudio");
+
+  // Sound ko autoplay karein jab webpage load hoti hai
+  audio.autoplay = true;
+
+  // Sound play hone par event listener lagayein
+  audio.addEventListener('ended', function() {
+    // Sound ko stop karein
+    audio.pause();
+  });
+</script>
 
 
 
 
 
+<style>
+  #vfytitle {
+    font-size: 25px; /* Font size ko 25 pixels par set kiya gaya hai */
+    font-family: 'bongee', sans-serif; /* Apne pasandeeda font ka naam yahan set karein */
+    color: #ffffff; /* Font color ko white (#ffffff) par set kiya gaya hai */
+    text-shadow: 2px 2px 4px #000000; /* Text shadow ko 2px horizontal, 2px vertical, 4px blur, aur black color (#000000) par set kiya gaya hai */
+  }
+</style>
+
+
+
+<script>
+document.addEventListener('contextmenu', function (e) {
+    e.preventDefault(); // Prevent the default context menu
+});
+</script>
+<link rel="manifest" href="./manifest.webmanifest">
+
+<script>
+var op = new Audio();
+op.src = '/effect/Click.mp3';
+</script>
+
+
+<script>
+    // Check if the webpage has been refreshed before
+if (!sessionStorage.getItem("refreshed")) {
+  // Set the "refreshed" flag in session storage
+  sessionStorage.setItem("refreshed", "true");
+  // Refresh the page after 2 seconds
+  setTimeout(function() {
+    location.reload();
+  
+} else {
+  // If it's a revisit, refresh the page immediately
+  location.reload();
+}
+
+  </script>
+
+
+
+<style>
+    /* Make the background transparent */
+    audio::-webkit-media-controls-panel,
+    audio::-webkit-media-controls {
+      background-color: transparent;
+    }
+    
+    /* Hide the time display */
+    audio::-webkit-media-controls-current-time-display {
+      display: none;
+    }
+    
+    audio::-webkit-media-controls-time-remaining-display {
+      display: none;
+    }
+    
+    /* Hide the speaker icon */
+    audio::-webkit-media-controls-volume-slider {
+      display: none;
+    }
+    
+    /* Hide the three-dot option button (menu) */
+    audio::-webkit-media-controls-mute-button,
+    audio::-webkit-media-controls-overflow-button {
+      display: none;
+    }
+    
+    /* Show only the progress bar */
+    audio::-webkit-media-controls-panel {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    
+    audio::-webkit-media-controls-play-button,
+    audio::-webkit-media-controls-seek-back-button,
+    audio::-webkit-media-controls-seek-forward-button {
+      display: none;
+    }
+  </style>
+
+
+<!DOCTYPE html>
+<html>
+<head>
+  
+<style>
+
+@-webkit-keyframes hue {
+100% { -webkit-filter:hue-rotate(360deg); }
+}
+img:hover {
+-webkit-animation:hue 10s linear infinite;
+}
+	
+</style>
+
+
+
+	
+
+	<style>
+
+#SThumb {
+  width: 100px;
+  
+	width: 100px;
+            height: 100px;
+            border-radius: 50%;
+
+animation: spin 4s linear infinite;
+box-shadow: 0 0 20px #000;
+box-opacity: 0.5;	
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+</style>
+
+
+
+<div class="fixed">
+        <b href="" class="button ">
+            <div class="buttonDiv bg-b-blue">
+ <img id="SThumb" src="/img/logo.png"  alt="developer vivek masona" width="60" height="60" border="0" border-color="#15E2F5" style="border-radius: 200px;">
+      
+            </div>
+        </b></div>
+
+<style>*
+
+.fixed
+{
+    position: fixed;
+    top:72%;
+    right: 0;
+    width:110px;
+    height:200px;
+    z-index:999;
+}
+.button 
+{
+display: block;
+border: 0;
+line-height: 3;
+margin-bottom: 0.3em;
+outline: none;
+text-decoration: none;
+color: #fff;
+width: 130px;
+
+font-size: 16px;
+border-radius: 20px 0 0 20px;
+}
+.buttonDiv 
+{
+
+border-radius: 50px 0 0 50px;
+}
+
+/* Button Css */
+.bg-b-blue
+{
+    
+background: rgb(63,181,219);
+background: radial-gradient(circle, rgba(63,181,219,1) 0%, rgba(32,53,58,1) 100%);
+	.bg-b-blue:hover
+{
+    background-color:yellow;
+}
+.</style>
+
+
+
+	
+
+
+
+
+
+
+
+
+
+
+<script src='demo-to-prevent-copy-paste-on-blogger_files/googleapis.js'></script><script type='text/javascript'> if(typeof document.onselectstart!="undefined" ) {document.onselectstart=new Function ("return false" ); } else{document.onmousedown=new Function ("return false" );document.onmouseup=new Function ("return false"); } </script>
+
+<vivek href="#" onmousedown="op.play()">
 
 
 
@@ -49,19 +261,50 @@ video audio  downloading site so please  visit and download high quality audio s
 <script src="https://cdn.jsdelivr.net/gh/Vivekmasona/musicjs/jquery-mobile.js"></script>
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Vivekmasona/musicjs/bootstrap.min.css" />
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Vivekmasona/musicjs/jquery.mobile-1.4.5.min.css" />
-<style>
-
-
-
-
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+	
+	
+	
+	
+	<style>
 body{
 Background-color:#000;
   margin: 0px;
   padding : 0px;
 }
 
+         
+      #current-time, #total-time {
+            color: #15e2f5;
+	 
+          }
+         
+	
+#custom-time-container {
+  
+  font-size:22px;
+  
+  text-align: center;
+  
+color:#15e2f5;
+background: rgb(122,164,212);
+background: radial-gradient(circle, rgba(122,164,212,1) 0%, rgba(0,0,0,1) 100%);
+	
+  
+}
+	
+#foot {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    
+    text-align: center; /* Center-align text */
+}
+
 
 #foot{
+box-shadow: 0 0 15px #1abc9c;	
 background-color:#0D0C0A;
 }
 #upper{
@@ -72,34 +315,34 @@ background-color:#0D0C0A;
 }
 #spacer{
 background: linear-gradient(0deg, rgba(42,42,42,1) 18%, rgba(0,232,255,1) 53%, rgba(42,42,42,1) 80%);
-  height : 174px;
+  height : 190px;
 }
 #tube{
-  color: #fff;
+  color: #000;
   background: #15E2F5;
   padding:0px 4px;
   border-radius: 6px;
 }
 #search-btn{
-background-colour:#2a2a2a;
+background-colour:#16E2F5;
+box-shadow: 0 0 10px #000;
   display : block;
-  width : 40%;
-border: 1px solid #fff !important;
+  width : 31%;
+border: 2px solid #16E2F5 !important;
   margin : auto;
-  border-radius : 8px;
+  border-radius : 20px;
   margin-top : 20px;
 }
 #foot .ui-btn { 
 Color:#15E2F5;
-background: radial-gradient(circle, rgba(3,6,6,1) 26%, rgba(55,237,246,1) 44%, rgba(13,12,10,1) 59%);
-
+background-color:#0D0C0A;
   height: 50px;
  font-size:50px;
   font-size : 20px; 
 }
 background: radial-gradient(circle, rgba(3,6,6,1) 26%, rgba(55,237,246,1) 44%, rgba(13,12,10,1) 59%);
 .ui-navbar li .ui-btn .ui-btn-inner, .ui-navbar li .ui-btn {
-    border: 0 solid #000 !important;
+    border: 2 solid #fff !important;
 }
 Color:#15E2F5;
 .search-header{
@@ -110,9 +353,27 @@ Color:#15E2F5;
 
   margin-top: 20px;
 }
+#custom-progress-bar {
+  width: 100%;
+  background: #616D7E;
+}
+
+#progress {
+  width: 0;
+  height: 6px;
+  background: rgb(12,78,10);
+background: linear-gradient(90deg, rgba(12,78,10,1) 4%, rgba(34,108,31,1) 15%, rgba(133,173,130,1) 34%, rgba(168,196,166,1) 38%, rgba(255,255,255,1) 50%, rgba(255,254,254,1) 64%, rgba(255,217,200,1) 70%, rgba(255,103,31,1) 88%);
+
+}
+#search-basic{
+	
+border-radius: 1 px;
+}
+	
+	
 .content{
 
-  height : 180px;
+  height : 170px;
   background: radial-gradient(circle, rgba(0,0,0,1) 40%, rgba(21,224,244,1) 6%, rgba(42,42,42,1) 46%);
   margin-top : 10px;
   text-align : center;
@@ -134,110 +395,406 @@ color:#252525;
   margin-top : 4px;
 }
 .list{
+margin-top : 14px;
+width: 100%;	
 background: linear-gradient(0deg, rgba(24,230,250,1) 29%, rgba(42,42,42,1) 46%, rgba(42,42,42,1) 71%, rgba(31,155,167,1) 83%, rgba(24,230,250,1) 98%);
   font-size : 15px;
 }
+
 footer{
 
 
 Color:#15E2F5;
-  position : fixed;
+  position : sticky;
 }
 #nav {
-Background-color:#000;
+Background-color:#0D0C0A;
     display:flex;
     justify-content:space-around;
     width:100%;
 }
-#SThumb{
-border-radius:5px;
+	#SAudio {
 
-  opacity: 6;
+    display:flex;
+    justify-content: center;
+    width:120%;
+   height:12px;
+background-color: transparent;
+		
+	}
+
+#SAudio {
+  display: yes;
+	}
+
+
+#vfytitle {
+color:#fff;
 
 }
+
+
+
+		
 </style>
+
+
+	
 
 <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous" />
 
 
+
+	
 <div data-role="page" id="home" data-theme="b">
-  <div id="upper">
+  
+	
+	
+	<div id="upper">
+
+
+	  
     <div data-role="header">
-      <button id="toggleButton">Toggle Recognition</button>
+
+
+
+	    
+        <a href="#" class="ui-btn ui-corner-all ui-shadow" onclick="openNav()"><i class='fa fa-sliders' style='font-size:18px;color:#16E2F5'></i></i></a>
+	   <a id="fastForwardButto"><i class="fa fa-microphone" onclick="startDictation()" aria-hidden="true" style="font-size:19px;color:#15e2f5"></i></a>
+      
+	    <div class="vivek" id="example"></div>
+
+
+
+<!-- Display the current video ID and time -->
+
 
   
-      <h1>VFY
+
+
+	    
+<h1>VFY
 <span id="Tube">Music<span></span></span></h1>
-      
+    
     </div>
     <div data-role="main" class="ui-content">
-     <input type="search"  name="search" id="search-basic" class="search-bar"placeholder="VIVEKFY: Type songs name artists...."/>
-     <button onclick='search()' data-role="button" data-icon="search" data-mini="true" data-inline="true" data-theme="b" id="search-btn">Search</button>
-      </div>   
+     <input type="search"  name="search" onclick="startDictation()"  id="search-basic" class="search-bar"placeholder="VIVEKFY: Type songs name artists...."/>
+ <sr id="sr"> <button onclick="search(),speakSearchText()" data-role="button" data-icon="search" data-mini="true" data-inline="true" data-theme="b" id="search-btn">SEARCH..</button></sr>
+	    
+	    
+	    
+   <div id="autocomplete-results"></div>
+
+    
+    </div> 
+	 
    </div>
     <div id="spacer"></div>
     <div id="homepage-content">
     <div class="container-fluid" id="home-content">
       <div class="row">
-        <div class="col-xs-6"><div class="content"><i id="icon" class="fa fa-youtube-play" aria-hidden="true"></i></div><span id="caption">YouTube Top 100</span></div>
-        <div class="col-xs-6"><div class="content"><i id="icon" class="fa fa-music" aria-hidden="true"></i></div><span id="caption">Recently Played</span></div>
-      
+<div id="videos">
 
 
-</div>
+<div>
+<img src="https://i.ytimg.com/vi/ZzDj3vwpkbA/maxresdefault.jpg" onclick="searchChhathSongs()"
+              alt="vfy"
+              width="100%"
+            />
+            <section>
+              <img
+                src="/img/logo.png"
+                alt="Vivekfy"
+                width="10%"
+              />
+              <div>
+                <p>Chhath Puja Geet /Chhath Songs</p>
+                <small>VFY</small><br />
+                <small>Music Player</small>
+              </div>
+            </img
+></section></img
+></div>	
+		      
+		      
+<div>
+<img src="https://i.ytimg.com/vi/9KYG0L4PYNc/maxresdefault.jpg" onclick="searchTrendingSongs()"
+              alt="vfy"
+              width="100%"
+            />
+            <section>
+              <img
+                src="/img/logo.png"
+                alt="Vivekfy"
+                width="10%"
+              />
+              <div>
+                <p>New Releases Hindi Songs 2023</p>
+                <small>VFY</small><br />
+                <small>Music Player</small>
+              </div>
+            </img
+></section></img
+></div>	
+<div>
+<img src="https://i.ytimg.com/vi/mmk98CRv7Jg/maxresdefault.jpg" onclick="searchPawanSongs()"
+              alt="vfy"
+              width="100%"
+            />
+            <section>
+              <img
+                src="/img/logo.png"
+                alt="Vivekfy"
+                width="10%"
+              />
+              <div>
+                <p>Pawan Singh New Songs </p>
+                <small>VFY</small><br />
+                <small>Music Player</small>
+              </div>
+            </img
+></section></img
+></div>	
+
+<div>
+<img src="https://i.ytimg.com/vi/5oExKMYIE9U/maxresdefault.jpg" onclick="searchHindiSongs()"
+              alt="vfy"
+              width="100%"
+            />
+            <section>
+              <img
+                src="/img/logo.png"
+                alt="Vivekfy"
+                width="10%"
+              />
+              <div>
+                <p>Top Trending New Hindi Songs 2023</p>
+                <small>VFY</small><br />
+                <small>Music Player</small>
+              </div>
+            </img
+></section></img
+></div>			      
+          
+
+
+<div>
+<img src="https://i.ytimg.com/vi/Fe_aRh7zjqo/maxresdefault.jpg" onclick="searchSadSongs()"
+              alt="vivekfy"
+              width="100%"
+            /></a>
+            <section>
+              <img
+                src="/img/logo.png"
+                alt="Vivekfy"
+                width="10%"
+              />
+              <div>
+                <p>2023 Hits Sad Song Remix</p>
+                <small>VFY</small><br />
+                <small>Music Player</small>
+              </div>
+            </img
+></section></img
+></div>
+
+<div>
+<img src="https://i.ytimg.com/vi/9S0Ws-lQJsI/maxresdefault.jpg" onclick="searchLofiSongs()"
+              alt="vivekfy"
+              width="100%"
+            />
+            <section>
+              <img
+                src="/img/logo.png"
+                alt="Vivekfy"
+                width="10%"
+              />
+              <div>
+                <p>Hits Remix Lofi Song 2023</p>
+                <small>VFY</small><br />
+                <small>Music Player</small>
+              </div>
+            </img
+></section></img
+></div>
+		      
+<div>
+<img src="https://i.ytimg.com/vi/VVfG5WTB4hk/maxresdefault.jpg" onclick="searchBhaktibhojpuriSongs()"
+              alt="vivekfy"
+              width="100%"
+            />
+            <section>
+              <img
+                src="/img/logo.png"
+                alt="Vivekfy"
+                width="10%"
+              />
+              <div>
+                <p>2023 Hits bhojpuri Bhakti Song</p>
+                <small>VFY</small><br />
+                <small>Music Player</small>
+              </div>
+            </img
+></section></img
+></div>	
+
+<div>
+<img src="https://i.ytimg.com/vi/oJOKRI3ThwA/maxresdefault.jpg" onclick="searchBhojpuriSongs()"
+              alt="vfy"
+              width="100%"
+            />
+            <section>
+              <img
+                src="/img/logo.png"
+                alt="Vivekfy"
+                width="10%"
+              />
+              <div>
+                <p>Bhojpuri Hits Songs 2023</p>
+                <small>VFY</small><br />
+                <small>Music Player </small>
+              </div>
+            </img
+></section></img
+></div>
+
+		      
+<div>
+<img src="https://i.ytimg.com/vi/J-fXIiilq_c/maxresdefault.jpg" onclick="searchOldvsnewSongs()"
+              alt="vfy"
+              width="100%"
+            />
+            <section>
+              <img
+                src="/img/logo.png"
+                alt="Vivekfy"
+                width="10%"
+              />
+              <div>
+                <p>Old Vs New remix Song</p>
+                <small>VFY</small><br />
+                <small>Music Player </small>
+              </div>
+            </img
+></section></img
+></div>
+
+
+		      
+	
+
+</div>	
+
+
+
+	      
+	      
+	      
+              </div>
+
+	    
        <div class="row">
-        <div class="col-xs-6"><div class="content"><i id="icon" class="fa fa-random" aria-hidden="true"></i></div><span id="caption">Random</span></div>
-        <div class="col-xs-6"><div class="content"><i id="icon" class="fa fa-heart" aria-hidden="true"></i></div><span id="caption">Most Played</span></div>
-      </div>
+              </div>
       
 
-<embed src="https://vivekfy.onrender.com/low-audio?url=https://youtu.be/NxjJOVJUvLQ" loop="true" autostart="true" width="2" height="0" hidden>
-        <audio controls autoplay hidden>
-            <source src="https://vivekfy.onrender.com/low-audio?url=https://youtu.be/NxjJOVJUvLQ" type="audio/mpeg">
-            Your browser does not support the audio element.
-        </audio>
+
+        
 
 
 
     </div>
     </div>
   <div data-role="footer" data-position="fixed" data-id="main-footer" id="foot">
+<center>
+<b hidden='' id='vivek_maurya'><img src="/img/add.png" alt="vivekfy application" width="100%" height="100%" z-index="9999"/>
+</b>
+	
+	<div id="custom-progress-bar">
+  <div id="progress"></div>
+</div>  
+<center><div id="custom-time-container">
+	
+
+	
+	
 
 
+<vfy id="showAutoClose">  
+
+<a href="#" id="pahilagana" class="float1"></a>
+<a href="#" id="vivekmasona" class="float1"></a>
+</vfy>
+<butto onclick="openModal()">
+
+	
+<center><div id="custom-time-container">
 
 
-<audio style="control" id="SAudio" controls><source src='' type='audio/mpeg'></source></audio>
+<div id="vfytitle"></div> 
 
-   <div id="ppl" data-role="navbar">
-    <ul id="nav">
+	  
 
+	
+      <span id="current-time">0:00</span> / <span id="total-time">0:00</span>
+    </div>
+</center>
+</butto>  
 
-
-
-<li><a id="pla">
-
-
-<form id="labnol" method="get" action="https://vivekfy.onrender.com/">
- <div class="speech">
-    <p class="hold-me" onclick="startDictation()"  />
-<i class="fa fa-microphone" aria-hidden="true"></i></p>
 </div>
+</center>
+   <div id="ppl" data-role="navbar">
+    
+	   
 
 
-</form></a></li>
+
+
+	   
+	   
+	   <ul id="nav">
 
 
 
-      <li style="width:50px; height:50px; position: relative; border:0.5px solid transparent;"><img style="width:100%; height:100%;" id="SThumb" src="/logo/vivek2.png" /></li>
-      <li><a id="play"><i class="fa fa-stop" aria-hidden="true"></i></a></li>
-      <li><a id="vivekmasona"><i class="fa fa-tv" aria-hidden="true"></i></a></li>
-      <li><a id="pahilagana"><i class="fa fa-download" aria-hidden="true"></i></a></li>
+
+
+
+ <li><a id="toggleButton"><i class="fa fa-magic"   aria-hidden="true" style="font-size:28px;color: #15e2f5"></i></a></li>
+
+
+ <li><a id="stop"><i class="fa fa-stop" aria-hidden="true"></i></a></li>
+      <li><a id="play"><i class="fa fa-play" aria-hidden="true"></i></a></li>
+<li><a id="nextButton"><i class="fa fa-arrow-right" aria-hidden="true"></i></a></li>
+
+	 
+	    
+	
+	    
+	    
+	  
+
+
+		  
+	
       
     </ul>
   </div>
   </div>   
  
 <script>
+$(document).ready(function() {
+  // Get the search query from the URL
+  const queryString = window.location.search;
+  const urlParams = new URLSearchParams(queryString);
+  const query = urlParams.get('query');
+
+  if (query) {
+    // If a query is present in the URL, set it in the search bar
+    $(".search-bar").val(query);
+    // Trigger the search function with the query
+    search();
+  }
+});
+
 $(document).on('swipeleft', '.ui-page', function(event){    
     if(event.handled !== true) // This will prevent event triggering more then once
     {    
@@ -266,8 +823,12 @@ function search(){
   //Get Form input
   $("#homepage-content").html("");
   
-  var ytapi = "AIzaSyAuncZ6zOgCiTErzcEc3cHGuhybV1UIJvA";
-  
+  //var ytapi = "AIzaSyAs_tSQYJXX9axDYXkYGe9RZmt1p-XRFWo";
+ //var ytapi = "AIzaSyCbn2fAWsEvw6TyD4PsfNchyK35rN69jH0";
+ //var ytapi = "AIzaSyAuncZ6zOgCiTErzcEc3cHGuhybV1UIJvA";
+ //var ytapi = "AIzaSyBemcQ7KH8CvxN0kKjGK-nhfuBzzTy4KEk";
+ //var ytapi = "AIzaSyBh6s9emY3VYSbsHudlhxProRt8mtFyt2s";
+ //var ytapi = "AIzaSyBfsNcJJHd-O0ftUzH2KqIRc_KhXgPXne0";
   
   var q = $(".search-bar").val();
   if(q === null || q === undefined || q=== ""){
@@ -279,7 +840,22 @@ $.get(
           part : 'snippet , id',
           q : q,
           type : 'video',
-          key : "AIzaSyAuncZ6zOgCiTErzcEc3cHGuhybV1UIJvA",
+	 videoSyndicated: 'true',
+	videoCategoryId: '10',
+        videoDuration: 'short', // This filters for videos under 4 minutes
+        eventType: 'none', // Exclude live videos
+        //videoDuration: 'medium', // 'medium' ya 'long' as per your preference
+        //eventType: 'none' // 'none'
+	//videoEmbeddable: 'true', // Exclude live videos
+        //videoType: 'video',
+        //order: 'date', // Sort by date (newest first)
+        //videoLicense: 'creativeCommon',
+          //key : "AIzaSyAs_tSQYJXX9axDYXkYGe9RZmt1p-XRFWo",
+	  //key : "AIzaSyAuncZ6zOgCiTErzcEc3cHGuhybV1UIJvA",
+	  //key : "AIzaSyCbn2fAWsEvw6TyD4PsfNchyK35rN69jH0",
+	  //key : "AIzaSyBemcQ7KH8CvxN0kKjGK-nhfuBzzTy4KEk", 
+	  //key : "AIzaSyBh6s9emY3VYSbsHudlhxProRt8mtFyt2s",
+	  key : "AIzaSyBfsNcJJHd-O0ftUzH2KqIRc_KhXgPXne0",
           maxResults : "40"
         },
           function(data){
@@ -315,44 +891,300 @@ function getOutput(item,i){
  //Build our output:
   var output =
   '<ul data-role="listview" data-inset="true" id="myList">' +
-      '<li><a onclick="loadSong(this)" index="'+i+'" class="list" vid="'+id+'"><img src="'+thumb+'" alt="vivekfy.jpg">VFY:-'+title+'</a></li>' +
+      '<li><a onclick="loadSong(this)" index="'+i+'" class="list" vid="'+id+'"><img src="'+thumb+'" alt="vivekfy.jpg" id="vfyy">V F Y-'+title+'</a></li>' +
   '</ul>';
 
   return output;
 }
 
-function loadSong(song,ind){
-    
-  var id = $(song).attr("vid");
- var indId = parseInt($(song).attr("index"));
-  var thumbnail = $(song).children('img').attr("src");
-  localStorage.setItem("playPresent",id);
-  localStorage.setItem("thumbnail",thumbnail);
-  $("#thumbnail").attr("src",thumbnail);
-  play(id,indId);
+
+// Show the popup when a button is clicked
+$("#showPopupButton").click(function() {
+    $("#popupContainer").show();
+});
+
+// Close the popup when the close button is clicked
+$("#closePopup").click(function() {
+    $("#popupContainer").hide();
+});
+	
+	
+function loadSong(song, ind) {
+    var id = $(song).attr("vid");
+    var indId = parseInt($(song).attr("index"));
+    var thumbnail = $(song).children('img').attr("src");
+    var title = $(song).text(); // Get the title text
+
+    localStorage.setItem("playPresent", id);
+    localStorage.setItem("thumbnail", thumbnail);
+    $("#thumbnail").attr("src", thumbnail);
+
+    // Set the profile ID
+    localStorage.setItem("profileID", id);
+    $("#profileID").text("Profile ID: " + id);
+
+    // Set the profile thumbnail and video ID
+    $("#profileThumbnail").html('<img src="' + thumbnail + '" alt="Profile Thumbnail">');
+    $("#profileThumbnail").data("videoId", id);
+
+    // Set the title text to the marquee div with ID "vfytitle"
+    $("#vfytitle").html('<marquee behavior="alternate" scrollamount="4" onmousedown="this.stop();" onmouseup="this.start();">' + title + '</marquee>');
+
+    play(id, indId);
 }
 
+
+
+
+
 function play(id,Sid){
-     // data = "https://vivekfy.onrender.com/low-audio?url="+id;
-      //data = "https://projectlounge.pw/ytdl/download?url=https://youtu.be/"+id+"&format=599";
+      //data = "https://vivekfy.onrender.com/audio/"+id;
+     // data = "https://projectlounge.pw/ytdl/download?url=https://youtu.be/"+id+"&format=599";
+     // data = "https://vivekfy-dev-jmbe.2.ie-1.fl0.io/audio?url=https://youtu.be/"+id;
+     //data = "https://myserver-dev-atmq.2.ie-1.fl0.io/low-audio?url=https://youtu.be/"+id;
      data = "https://myserver-dev-atmq.2.ie-1.fl0.io/audio?url=https://youtu.be/"+id;
-     // data = "https://vivekmasona.000webhostapp.com/Play?vfy=https://youtu.be/"+id;
-       document.getElementById("SThumb").src = "https://i.ytimg.com/vi/"+id+"/hqdefault.jpg";
+     //data = "https://audioserver-dev-cgen.2.sg-1.fl0.io/"+id;
+    document.getElementById("SThumb").src = "https://i.ytimg.com/vi/"+id+"/maxresdefault.jpg";
     document.getElementById("pahilagana").onclick = ()=>{
-        // location.href= "https://vivekfy.onrender.com/low-audiodl?url="+id;
-        location.href= "http://dlvid.onrender.com/mp3?url=https://youtu.be/"+id;
+        //location.href= "https://myserver-dev-akkd.2.sg-1.fl0.io/mp3?url=https://youtu.be/"+id;
+        location.href= "https://vivekfy-dev-jmbe.2.ie-1.fl0.io/download/audio?url=https://youtu.be/"+id;
+        //location.href= "https://vivekfy-dl-api.onrender.com/audio/"+id;
     };
 document.getElementById("vivekmasona").onclick = ()=>{
-        location.href= "https://vfy.netlify.app/dl?text="+id;
-    };
+        //location.href= "https://projectlounge.pw/ytdl/download?url=https://youtu.be/"+id;
+        //location.href= "https://myserver-dev-akkd.2.sg-1.fl0.io/mp4?url=https://youtu.be/"+id;
+        //location.href= "https://vivekfy-api-v2.onrender.com/video?url=https://youtu.be/"+id;
+     location.href= "https://vivekfy-dev-jmbe.2.ie-1.fl0.io/download/video?url=https://youtu.be/"+id;
+        };
 
-    audio = document.getElementById("SAudio");
-  audio.play()
-  audio.addEventListener("ended", () => {
     
-   document.getElementsByClassName("list")[Sid+1].click()
-   console.log('Next')
+
+var audio = document.getElementById("SAudio");
+
+// Function to play the next song
+function playNextSong() {
+    var nextSongIndex = Sid + 1; // Calculate the index of the next song
+    var playlistItems = document.getElementsByClassName("list");
+
+    if (nextSongIndex < playlistItems.length) {
+        playlistItems[nextSongIndex].click(); // Play the next song
+        audio.play(); // Play the audio
+
+        // Update the profile thumbnail and video ID for the next song
+        var nextSong = playlistItems[nextSongIndex];
+        var nextThumbnail = $(nextSong).children('img').attr("src");
+        var nextVideoId = $(nextSong).attr("vid");
+        $("#profileThumbnail").html('<img src="' + nextThumbnail + '" alt="Profile Thumbnail">');
+        $("#profileThumbnail").data("videoId", nextVideoId);
+
+        console.log('Automatically went to the next song and started playing.');
+    } else {
+        console.log('End of playlist');
+        // You may want to handle what happens when it's the end of the playlist.
+    }
+}
+
+// Listen for the 'ended' event
+audio.addEventListener("ended", function() {
+    playNextSong();
 });
+
+// Listen for the 'error' event
+audio.addEventListener("error", function () {
+    setTimeout(function () {
+        // Shift to the new link after 10 seconds
+        audio.src = "https://audioserver-dev-cgen.2.sg-1.fl0.io/"+id;
+        audio.load(); // Load the new source
+        audio.play(); // Start playing the new source
+    }, 5000); // 10 seconds
+});
+
+// Button click event
+var nextButton = document.getElementById("nextButton");
+nextButton.addEventListener("click", function () {
+    playNextSong();
+});
+
+
+
+	
+var audio = document.getElementById('SAudio');
+var fastForwardButton = document.getElementById('fastForwardButton');
+
+fastForwardButton.addEventListener('click', function () {
+    audio.currentTime += 10;
+});
+var audio = document.getElementById('SAudio');
+var rewindButton = document.getElementById('rewindButton');
+
+rewindButton.addEventListener('click', function () {
+    if (audio.currentTime >= 5) {
+        audio.currentTime -= 5;
+    } else {
+        audio.currentTime = 0;
+    }
+});
+
+var audio = document.getElementById('SAudio');
+var volume10Button = document.getElementById('volume10');
+var volume50Button = document.getElementById('volume50');
+var volume100Button = document.getElementById('volume100');
+
+volume10Button.addEventListener('click', function () {
+    audio.volume = 0.1; // Set volume to 10%
+});
+
+volume50Button.addEventListener('click', function () {
+    audio.volume = 0.5; // Set volume to 50%
+});
+
+volume100Button.addEventListener('click', function () {
+    audio.volume = 1.0; // Set volume to 100%
+});
+
+
+
+	
+const titleaudio = document.getElementById('SAudio');
+const songTitleElement = document.getElementById('vfytitle'); // Assuming the song title is displayed in an element with ID 'vfytitle'
+
+audio.addEventListener('play', () => {
+  // Update the tab title when audio starts playing
+  const songTitle = songTitleElement.textContent; // Get the song title from the 'vfytitle' element
+  document.title = songTitle + ' - ' + audio.currentTime + ' seconds';
+});
+
+audio.addEventListener('pause', () => {
+  // Restore the original page title when audio is paused
+  document.title = 'VIVEKFY-AI';
+});
+
+
+
+
+	
+
+const audioPlayer = document.getElementById("SAudio");
+const customTimeContainer = document.getElementById("custom-time-container");
+const currentTimeDisplay = document.getElementById("current-time");
+const totalTimeDisplay = document.getElementById("total-time");
+
+audioPlayer.addEventListener("loadedmetadata", () => {
+  const totalDuration = audioPlayer.duration;
+  totalTimeDisplay.textContent = formatTime(totalDuration);
+});
+
+audioPlayer.addEventListener("timeupdate", () => {
+  const currentTime = audioPlayer.currentTime;
+  currentTimeDisplay.textContent = formatTime(currentTime);
+});
+
+function formatTime(seconds) {
+  const minutes = Math.floor(seconds / 60);
+  const remainingSeconds = Math.floor(seconds % 60);
+  return `${minutes}:${remainingSeconds < 10 ? '0' : ''}${remainingSeconds}`;
+}
+
+// Function to convert time in format '0:00' to seconds
+function convertTimeToSeconds(time) {
+  var parts = time.split(":");
+  var minutes = parseInt(parts[0]);
+  var seconds = parseInt(parts[1]);
+  return (minutes * 60) + seconds;
+}
+
+// Add an event listener to the "Play Video" button
+var playVideoButton = document.getElementById("playVideoButton");
+playVideoButton.addEventListener("click", function() {
+// Pause audio elements with the ID "SAudio"
+    var audioElements = document.querySelectorAll("#SAudio");
+    for (var i = 0; i < audioElements.length; i++) {
+        audioElements[i].pause();
+    }
+
+    // Construct the video URL with the video ID and time
+    var videoUrl = "https://all-in-one-vid.000webhostapp.com/Play?id=" + id;
+
+    // Create and display the video in a popup
+    var modal = document.createElement("div");
+    modal.style.backgroundColor = "rgba(0, 0, 0, 0.9)";
+    modal.style.position = "fixed";
+    modal.style.top = "0";
+    modal.style.left = "0";
+    modal.style.width = "100%";
+    modal.style.height = "100%";
+    modal.style.display = "flex";
+    modal.style.alignItems = "center";
+    modal.style.justifyContent = "center";
+
+    var iframe = document.createElement("iframe");
+iframe.style.width = "100%"; // Set iframe width to 100%
+iframe.style.height = "100%"; // Set iframe height to 100%
+iframe.setAttribute("src", videoUrl);
+iframe.setAttribute("frameborder", "0");
+iframe.style.border = "0px solid #15e2f5"; // Add a 4px border around the iframe
+iframe.setAttribute("allowfullscreen", false);
+iframe.setAttribute("autoplay", "true");
+
+    var closeButton = document.createElement("button");
+closeButton.innerHTML = "&#10006;";
+closeButton.className = "close-button";
+closeButton.style.color = "#ffffff"; // Text color
+closeButton.style.backgroundColor = "#15e2f5"; // Background color
+closeButton.style.border = "0px"; // Remove the button's border
+closeButton.addEventListener("click", function() {
+    document.body.removeChild(modal); // Close the modal when the button is clicked
+});
+    // Style the close button to overlay the video in the center
+    closeButton.style.position = "absolute";
+    closeButton.style.top = "38%";
+    closeButton.style.left = "95%";
+    closeButton.style.transform = "translate(-50%, -50%)"; // Center the button
+
+    modal.appendChild(iframe);
+    modal.appendChild(closeButton);
+    document.body.appendChild(modal);
+});
+
+	
+    
+
+	
+
+const mainAudio = document.getElementById('SAudio');
+const watermarkAudio1 = document.getElementById('watermarkAudio1');
+const watermarkAudio2 = document.getElementById('watermarkAudio2');
+
+// When the main audio is loaded, start playing the first watermark audio.
+mainAudio.addEventListener('loadedmetadata', () => {
+    watermarkAudio1.play();
+});
+
+// Listen for the 'ended' event on the main audio to start playing the second watermark audio.
+mainAudio.addEventListener('ended', () => {
+    watermarkAudio2.play();
+//});
+
+// Adjust the volume of the watermark audios as needed.
+watermarkAudio1.volume = 1; // Adjust the volume as needed (0.2 means 20% of the main audio volume).
+watermarkAudio2.volume = 1; // Adjust the volume as needed (0.2 means 20% of the main audio volume).
+
+// To synchronize the playback of both watermark audios, you may need to handle events like 'play', 'pause', and 'timeupdate'.
+
+// To hide the watermark audio player controls, you can style it or set 'controls' attribute to false for both watermark audio elements.
+watermarkAudio1.controls = false;
+watermarkAudio2.controls = false;
+
+ });
+	
+
+	audio.addEventListener("timeupdate", function() {
+  const currentTime = audio.currentTime;
+  const duration = audio.duration;
+  const progress = (currentTime / duration) * 100;
+  document.getElementById("progress").style.width = progress + "%";
+});
+
 
   document.getElementById("play").onclick = function(){
      if (audio.paused){
@@ -364,6 +1196,12 @@ document.getElementById("vivekmasona").onclick = ()=>{
          document.querySelector("#play i").className = "fa fa-play";
      }
   };
+// Add the following code for the "Stop" button
+document.getElementById("stop").onclick = function() {
+    audio.pause();
+    audio.currentTime = 0; // Rewind the audio to the beginning
+    document.querySelector("#play i").className = "fa fa-play";
+};
 
     audio.src=data;
      audio.pause();
@@ -375,6 +1213,368 @@ document.getElementById("vivekmasona").onclick = ()=>{
    }
 }
 </script></div>
+
+
+<button id="pahilagana"></button>
+    <button id="vivekmasona"></button>
+
+   
+   <script>
+    let isVoiceRecognitionOn = false;
+    let recognitionTimeout;
+    const recognition = new (window.SpeechRecognition || window.webkitSpeechRecognition)();
+    recognition.lang = 'en-US';
+    recognition.interimResults = false;
+
+    const toggleButton = document.getElementById('toggleButton');
+
+    toggleButton.addEventListener('click', function () {
+        if (isVoiceRecognitionOn) {
+            recognition.stop();
+            clearTimeout(recognitionTimeout);
+            playAudio("/sound/again.mp3"); // Replace 'audio.mp3' with your audio file URL
+        } else {
+            playAudio("/sound/help1.mp3"); // Replace with the appropriate audio URL
+            setTimeout(function () {
+                recognition.start();
+                recognitionTimeout = setTimeout(function () {
+                    recognition.stop();
+                    playAudio("/sound/always.mp3"); // Replace with the appropriate audio URL
+                }, 25000); // Automatically turn off after 15 seconds
+            }, 2500); // Delay for 4 seconds before starting voice recognition
+        }
+        isVoiceRecognitionOn = !isVoiceRecognitionOn;
+    });
+
+    recognition.onresult = function(event) {
+        const lastResult = event.results[event.results.length - 1][0].transcript;
+
+        if (lastResult.toLowerCase() === 'mp3') {
+            const button1 = document.getElementById('pahilagana');
+            button1.click();
+            playAudio('/sound/audio.mp3'); // Replace with the appropriate audio URL
+        }
+	 if (lastResult.toLowerCase() === 'dowload mp3') {
+            const button1 = document.getElementById('pahilagana');
+            button1.click();
+            playAudio('/sound/audio.mp3'); // Replace with the appropriate audio URL
+        } 
+	 if (lastResult.toLowerCase() === 'mp3 download') {
+            const button1 = document.getElementById('pahilagana');
+            button1.click();
+            playAudio('/sound/audio.mp3'); // Replace with the appropriate audio URL
+        } 
+	if (lastResult.toLowerCase() === 'download this song') {
+            const button1 = document.getElementById('pahilagana');
+            button1.click();
+            playAudio('/sound/audio.mp3'); // Replace with the appropriate audio URL
+        } 
+	 if (lastResult.toLowerCase() === 'audio') {
+            const button1 = document.getElementById('pahilagana');
+            button1.click();
+            playAudio('/sound/audio.mp3'); // Replace with the appropriate audio URL
+        }
+	 if (lastResult.toLowerCase() === 'audio download') {
+            const button1 = document.getElementById('pahilagana');
+            button1.click();
+            playAudio('/sound/audio.mp3'); // Replace with the appropriate audio URL
+        }
+	if (lastResult.toLowerCase() === 'dowload audio') {
+            const button1 = document.getElementById('pahilagana');
+            button1.click();
+            playAudio('/sound/audio.mp3'); // Replace with the appropriate audio URL
+        } 
+	if (lastResult.toLowerCase() === 'video download') {
+            const button1 = document.getElementById('vivekmasona');
+            button1.click();
+            playAudio('/sound/videodownload .mp3'); // Replace with the appropriate audio URL
+        }
+	 if (lastResult.toLowerCase() === 'download video') {
+            const button1 = document.getElementById('vivekmasona');
+            button1.click();
+            playAudio('/sound/videodownload .mp3'); // Replace with the appropriate audio URL
+        } 
+	if (lastResult.toLowerCase() === 'mp4') {
+            const button1 = document.getElementById('vivekmasona');
+            button1.click();
+            playAudio('/sound/videodownload .mp3'); // Replace with the appropriate audio URL
+        } 
+	 if (lastResult.toLowerCase() === 'mp4 download') {
+            const button1 = document.getElementById('vivekmasona');
+            button1.click();
+            playAudio('/sound/videodownload .mp3'); // Replace with the appropriate audio URL
+        } 
+	 if (lastResult.toLowerCase() === 'download mp4') {
+            const button1 = document.getElementById('vivekmasona');
+            button1.click();
+            playAudio('/sound/videodownload .mp3'); // Replace with the appropriate audio URL
+        } 
+         if (lastResult.toLowerCase() === 'play video') {
+            const button1 = document.getElementById('playVideoButton');
+            button1.click();
+            playAudio('/sound/playvideo.mp3'); // Replace with the appropriate audio URL
+        }
+         if (lastResult.toLowerCase() === 'video play') {
+            const button1 = document.getElementById('playVideoButton');
+            button1.click();
+            playAudio('/sound/playvideo.mp3'); // Replace with the appropriate audio URL
+        }
+	   if (lastResult.toLowerCase() === 'video') {
+            const button1 = document.getElementById('playVideoButton');
+            button1.click();
+            playAudio('/sound/playvideo.mp3'); // Replace with the appropriate audio URL
+        } 
+	  if (lastResult.toLowerCase() === 'song') {
+            const button1 = document.getElementById('AdAudio');
+            button1.click();
+            playAudio('/sound/song.mp3'); // Replace with the appropriate audio URL
+        } 
+	  if (lastResult.toLowerCase() === 'play song') {
+            const button1 = document.getElementById('AdAudio');
+            button1.click();
+            playAudio('/sound/song.mp3'); // Replace with the appropriate audio URL
+        }
+	 if (lastResult.toLowerCase() === 'song play') {
+            const button1 = document.getElementById('AdAudio');
+            button1.click();
+            playAudio('/sound/song.mp3'); // Replace with the appropriate audio URL
+        } 
+	 if (lastResult.toLowerCase() === 'audio start') {
+            const button1 = document.getElementById('AdAudio');
+            button1.click();
+            playAudio('/sound/song.mp3'); // Replace with the appropriate audio URL
+        } 
+	 if (lastResult.toLowerCase() === 'start audio') {
+            const button1 = document.getElementById('AdAudio');
+            button1.click();
+            playAudio('/sound/song.mp3'); // Replace with the appropriate audio URL
+        } 
+	 if (lastResult.toLowerCase() === 'audio') {
+            const button1 = document.getElementById('AdAudio');
+            button1.click();
+            playAudio('/sound/song.mp3'); // Replace with the appropriate audio URL
+        } 
+	 if (lastResult.toLowerCase() === 'audio play') {
+            const button1 = document.getElementById('AdAudio');
+            button1.click();
+            playAudio('/sound/song.mp3'); // Replace with the appropriate audio URL
+        }
+	if (lastResult.toLowerCase() === 'play audio') {
+            const button1 = document.getElementById('AdAudio');
+            button1.click();
+            playAudio('/sound/song.mp3'); // Replace with the appropriate audio URL
+        }
+	  if (lastResult.toLowerCase() === 'news') {
+            const button1 = document.getElementById('AdAudio');
+            button1.click();
+            playAudio('/sound/news.mp3'); // Replace with the appropriate audio URL
+        }
+	   if (lastResult.toLowerCase() === 'play news') {
+            const button1 = document.getElementById('AdAudio');
+            button1.click();
+            playAudio('/sound/news.mp3'); // Replace with the appropriate audio URL
+        } 
+	  if (lastResult.toLowerCase() === 'download') {
+            const button1 = document.getElementById('AdVideo');
+            button1.click();
+            playAudio('/sound/song.mp3'); // Replace with the appropriate audio URL
+        }
+	  if (lastResult.toLowerCase() === 'extract') {
+            const button1 = document.getElementById('AdVideo');
+            button1.click();
+            playAudio('/sound/song.mp3'); // Replace with the appropriate audio URL
+        } 
+	 if (lastResult.toLowerCase() === 'save') {
+            const button1 = document.getElementById('AdVideo');
+            button1.click();
+            playAudio('/sound/song.mp3'); // Replace with the appropriate audio URL
+        }
+	 if (lastResult.toLowerCase() === 'volume down') {
+            const button1 = document.getElementById('volume10');
+            button1.click();
+            playAudio('/sound/vdown.mp3'); // Replace with the appropriate audio URL
+        }
+	  if (lastResult.toLowerCase() === 'volume decrease') {
+            const button1 = document.getElementById('volume10');
+            button1.click();
+            playAudio('/sound/vdown.mp3'); // Replace with the appropriate audio URL
+        }
+	   if (lastResult.toLowerCase() === 'decrease sound') {
+            const button1 = document.getElementById('volume10');
+            button1.click();
+            playAudio('/sound/vdown.mp3'); // Replace with the appropriate audio URL
+        } 
+	 if (lastResult.toLowerCase() === 'volume increase') {
+            const button1 = document.getElementById('volume100');
+            button1.click();
+            playAudio('/sound/vfull.mp3'); // Replace with the appropriate audio URL
+	}
+	 if (lastResult.toLowerCase() === 'volume full') {
+            const button1 = document.getElementById('volume100');
+            button1.click();
+            playAudio('/sound/vfull.mp3'); // Replace with the appropriate audio URL
+        }
+	 if (lastResult.toLowerCase() === 'sound full') {
+            const button1 = document.getElementById('volume100');
+            button1.click();
+            playAudio('/sound/vfull.mp3'); // Replace with the appropriate audio URL
+        } 
+	  if (lastResult.toLowerCase() === 'full sound') {
+            const button1 = document.getElementById('volume100');
+            button1.click();
+            playAudio('/sound/vfull.mp3'); // Replace with the appropriate audio URL
+        } 
+	  if (lastResult.toLowerCase() === 'next') {
+            const button1 = document.getElementById('nextButton');
+            button1.click();
+            playAudio('/sound/nextsong.mp3'); // Replace with the appropriate audio URL
+        }
+	  if (lastResult.toLowerCase() === 'song change') {
+            const button1 = document.getElementById('nextButton');
+            button1.click();
+            playAudio('/sound/nextsong.mp3'); // Replace with the appropriate audio URL
+        }
+	  if (lastResult.toLowerCase() === 'change song') {
+            const button1 = document.getElementById('nextButton');
+            button1.click();
+            playAudio('/sound/nextsong.mp3'); // Replace with the appropriate audio URL
+        }
+	 if (lastResult.toLowerCase() === 'forward') {
+            const button1 = document.getElementById('fastForwardButton');
+            button1.click();
+            playAudio('/sound/forward.mp3'); // Replace with the appropriate audio URL
+        }
+	  if (lastResult.toLowerCase() === 'song forward') {
+            const button1 = document.getElementById('fastForwardButton');
+            button1.click();
+            playAudio('/sound/forward.mp3'); // Replace with the appropriate audio URL
+        }
+	 if (lastResult.toLowerCase() === 'forward song') {
+            const button1 = document.getElementById('fastForwardButton');
+            button1.click();
+            playAudio('/sound/forward.mp3'); // Replace with the appropriate audio URL
+        }
+	if (lastResult.toLowerCase() === 'backward') {
+            const button1 = document.getElementById('rewindButton');
+            button1.click();
+            playAudio('/sound/rewind.mp3'); // Replace with the appropriate audio URL
+        } 
+	  if (lastResult.toLowerCase() === 'rewind') {
+            const button1 = document.getElementById('rewindButton');
+            button1.click();
+            playAudio('/sound/rewind.mp3'); // Replace with the appropriate audio URL
+        } 
+	if (lastResult.toLowerCase() === 'song rewind') {
+            const button1 = document.getElementById('rewindButton');
+            button1.click();
+            playAudio('/sound/rewind.mp3'); // Replace with the appropriate audio URL
+        } 
+	 if (lastResult.toLowerCase() === 'rewind song') {
+            const button1 = document.getElementById('rewindButton');
+            button1.click();
+            playAudio('/sound/rewind.mp3'); // Replace with the appropriate audio URL
+        }
+	 if (lastResult.toLowerCase() === 'backward song') {
+            const button1 = document.getElementById('rewindButton');
+            button1.click();
+            playAudio('/sound/rewind.mp3'); // Replace with the appropriate audio URL
+        }  
+	  if (lastResult.toLowerCase() === 'song backward') {
+            const button1 = document.getElementById('rewindButton');
+            button1.click();
+            playAudio('/sound/rewind.mp3'); // Replace with the appropriate audio URL
+        }
+	  if (lastResult.toLowerCase() === 'stop') {
+            const button1 = document.getElementById('stop');
+            button1.click();
+            playAudio('/sound/stop.mp3'); // Replace with the appropriate audio URL
+        } 
+	 if (lastResult.toLowerCase() === 'song stop') {
+            const button1 = document.getElementById('stop');
+            button1.click();
+            playAudio('/sound/stop.mp3'); // Replace with the appropriate audio URL
+        }
+	 if (lastResult.toLowerCase() === 'stop song') {
+            const button1 = document.getElementById('stop');
+            button1.click();
+            playAudio('/sound/stop.mp3'); // Replace with the appropriate audio URL
+        } 
+	if (lastResult.toLowerCase() === 'music stop') {
+            const button1 = document.getElementById('stop');
+            button1.click();
+            playAudio('/sound/stop.mp3'); // Replace with the appropriate audio URL
+        }
+	 if (lastResult.toLowerCase() === 'stop music') {
+            const button1 = document.getElementById('stop');
+            button1.click();
+            playAudio('/sound/stop.mp3'); // Replace with the appropriate audio URL
+        } 
+	  if (lastResult.toLowerCase() === 'audio stop') {
+            const button1 = document.getElementById('stop');
+            button1.click();
+            playAudio('/sound/stop.mp3'); // Replace with the appropriate audio URL
+        }
+	 if (lastResult.toLowerCase() === 'stop audio') {
+            const button1 = document.getElementById('stop');
+            button1.click();
+            playAudio('/sound/stop.mp3'); // Replace with the appropriate audio URL
+        }
+	 if (lastResult.toLowerCase() === 'stop mp3') {
+            const button1 = document.getElementById('stop');
+            button1.click();
+            playAudio('/sound/stop.mp3'); // Replace with the appropriate audio URL
+        }
+	if (lastResult.toLowerCase() === 'mp3 stop') {
+            const button1 = document.getElementById('stop');
+            button1.click();
+            playAudio('/sound/stop.mp3'); // Replace with the appropriate audio URL
+        }
+	  if (lastResult.toLowerCase() === 'play') {
+            const button1 = document.getElementById('play');
+            button1.click();
+            playAudio('/sound/play.mp3'); // Replace with the appropriate audio URL
+        } 
+	 if (lastResult.toLowerCase() === 'developer') {
+            const button1 = document.getElementById('developer');
+            button1.click();
+            playAudio('/sound/vivek.mp3'); // Replace with the appropriate audio URL
+        }
+	  if (lastResult.toLowerCase() === 'developer name') {
+            const button1 = document.getElementById('developer');
+            button1.click();
+            playAudio('/sound/vivek.mp3'); // Replace with the appropriate audio URL
+        }
+	 if (lastResult.toLowerCase() === 'your father') {
+            const button1 = document.getElementById('developer');
+            button1.click();
+            playAudio('/sound/vivek.mp3'); // Replace with the appropriate audio URL
+        } 
+	 if (lastResult.toLowerCase() === 'what is your father name') {
+            const button1 = document.getElementById('developer');
+            button1.click();
+            playAudio('/sound/vivek.mp3'); // Replace with the appropriate audio URL
+        }   
+    };
+
+    // Function to play audio from a given URL
+    function playAudio(audioURL) {
+        const audio = new Audio(audioURL);
+        audio.play();
+    }
+</script>
+ 
+	
+
+<div id="developer"></div>
+<button id="volume10">10%</button>
+<button id="volume50">50%</button>
+<button id="volume100">100%</button>
+
+
+
+
+
+
 
 
 <script>
@@ -394,7 +1594,7 @@ document.getElementById("vivekmasona").onclick = ()=>{
         document.getElementById('search-basic').value
                                  = e.results[0][0].transcript;
         recognition.stop();
-        document.getElementById('upiInput').submit();
+        document.getElementById('search-btn').submit();
       };
 
       recognition.onerror = function(e) {
@@ -403,15 +1603,73 @@ document.getElementById("vivekmasona").onclick = ()=>{
 
     }
   }
+function searchHindiSongs() {
+    var query = "Latest release hindi songs"; // Hindi songs ke liye query
+    $(".search-bar").val(query); // Query input field mein set karen
+    search(); // Search function ko call karen
+}
+function searchBhojpuriSongs() {
+    var query = "new bhojpuri songs"; // Hindi songs ke liye query
+    $(".search-bar").val(query); // Query input field mein set karen
+    search(); // Search function ko call karen
+}	
+function searchBhaktiSongs() {
+    var query = "hindi bhakti songs"; // Hindi songs ke liye query
+    $(".search-bar").val(query); // Query input field mein set karen
+    search(); // Search function ko call karen
+}	
+function searchChhathSongs() {
+    var query = "chhath song"; // Hindi songs ke liye query
+    $(".search-bar").val(query); // Query input field mein set karen
+    search(); // Search function ko call karen
+}	
+function searchLofiSongs() {
+    var query = "new lofi remix song"; // Hindi songs ke liye query
+    $(".search-bar").val(query); // Query input field mein set karen
+    search(); // Search function ko call karen
+}	
+function searchOldvsnewSongs() {
+    var query = "old vs new"; // Hindi songs ke liye query
+    $(".search-bar").val(query); // Query input field mein set karen
+    search(); // Search function ko call karen
+}	
+function searchBhaktibhojpuriSongs() {
+    var query = "new bhojpuri bhakti songs"; // Hindi songs ke liye query
+    $(".search-bar").val(query); // Query input field mein set karen
+    search(); // Search function ko call karen
+}
+function searchSadSongs() {
+    var query = "Sad song"; // Hindi songs ke liye query
+    $(".search-bar").val(query); // Query input field mein set karen
+    search(); // Search function ko call karen
+}		
+function searchTrendingSongs() {
+    var query = "New Terending hindi songs"; // Hindi songs ke liye query
+    $(".search-bar").val(query); // Query input field mein set karen
+    search(); // Search function ko call karen
+}
+function searchPawanSongs() {
+    var query = "pawan singh song"; // Hindi songs ke liye query
+    $(".search-bar").val(query); // Query input field mein set karen
+    search(); // Search function ko call karen
+}		
+	
 </script>
+
+
+
+
+
+
 
 <style>html {
 	background-color:#000;
 }
 audio {
+	background-color:red;
        border-radius : 0px; 
 	height: 26px;
-Width:108%;
+Width:100%;
 	outline: 2;
 
 	filter: invert(1);
@@ -486,61 +1744,1056 @@ var offlineMsg = document.getElementById("offline-message");
 
 <b href="#" onmousedown="op.play()">
 <div aria-hidden="true" tabindex="-1" id="offline-message">
-<iframe src="https://vivekfy.onrender.com" style="position:fixed; top:0; left:0; bottom:0; right:0; width:100%; height:100%; border:none; margin:0; padding:0; overflow:hidden; z-index:999999;">
+<iframe src="/offline/vivek.html" style="position:fixed; top:0; left:0; bottom:0; right:0; width:100%; height:100%; border:none; margin:0; padding:0; overflow:hidden; z-index:999999;">
     Your browser doesn't support iframes
 </iframe>
 </div></b>
 
 
-<script>
-  let isVoiceRecognitionOn = false;
-  let recognitionTimeout;
-  const recognition = new (window.SpeechRecognition || window.webkitSpeechRecognition)();
-  recognition.lang = 'en-US';
-  recognition.interimResults = false;
 
-  const toggleButton = document.getElementById('toggleButton');
-  const playVariations = ["play", "start", "commence"]; // Add more variations as needed
 
-  toggleButton.addEventListener('click', function () {
-    if (isVoiceRecognitionOn) {
-      recognition.stop();
-      clearTimeout(recognitionTimeout);
-      speak("Please click again");
-    } else {
-      speak("Sir, how can I help you");
-      setTimeout(function () {
-        recognition.start();
-        recognitionTimeout = setTimeout(function () {
-          recognition.stop();
-          speak("Don't worry, I am always here for you");
-        }, 10000); // Automatically turn off after 10 seconds
-      }, 1500); // Delay for 1.5 seconds before starting voice recognition
+
+
+
+
+</div>
+
+
+
+
+
+
+<div class="main-container">
+  <div class="main-header">
+   </div> <div id="api1" class="modal-design">
+    <div>
+   
+<style>
+#share_titlevkm1m,#share_textvkm1m,#outputvkm1m{
+    text-align:center;
+    font-size:20px;
+}
+ .iframevkm1mr{
+        outline:0;
+        border:0;
+        width:100%;
+        height:86%;
+        overflow:hidden;
     }
-    isVoiceRecognitionOn = !isVoiceRecognitionOn;
+.iframevkar{
+        outline:0;
+        border:0;
+        width:100%;
+        height:15%;
+        overflow:hidden;
+    }
+ 
+</style>
+
+<script>
+  window.addEventListener('load', function() {
+    setTimeout(hide,2000);
+    var url = new URL(window.location.toString());
+    let vTitle = document.querySelector('#share_titlevkm1m');
+    vTitle.innerText = 'Title- '   + url.searchParams.get('title');
+    let vUrl = document.querySelector('#share_textvkm1m');
+    vUrl.innerText  = 'URL - ' + url.searchParams.get('text');
+    let output = document.querySelector("#outputvkm1m");
+    console.log(output);
+    function hide(){
+      document.querySelector('#loadingvkm1m').style="display:none";
+    }
+if(url.searchParams.get('text')){
+    openNav()
+}
+    //output.innerHTML ="<iframe src='https://vfy.netlify.app/share?url=https://vivekmasona.000webhostapp.com/Play?vfy="+ url.searchParams.get('text') +"&f=mp3&color=16E2F5' class='iframevkm1mr'></iframe>";
+  //});
+	output.innerHTML ="<a href='https://vivekfy-dev-jmbe.2.ie-1.fl0.io/download/video?url="+ url.searchParams.get('text') +"&color=000'><img src='img/mp4.png' alt='720p video direct download' width='200' height='5%'></a><a href='https://vivekfy-dev-jmbe.2.ie-1.fl0.io/download/audio?url="+ url.searchParams.get('text') +"&color=000'><img src='img/mp3.png' alt='256k mp3 direct download' width='200' height='5%'></a><iframe src='https://vfy.netlify.app/share?url=https://myserver-dev-atmq.2.ie-1.fl0.io/audio?url="+ url.searchParams.get('text') +"&f=mp3&color=16E2F5' class='iframevkm1mr'></iframe>";
+  });  
+  </script>
+
+
+  </div></div></div>
+
+
+<!doctype html>
+
+
+
+<style>
+body {
+  font-family: 'Lato', sans-serif;
+}
+
+.overlay {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 999999;
+  top: 0;
+  left: 0;
+  background: rgb(0,0,0);
+background: linear-gradient(180deg, rgba(0,0,0,1) 20%, rgba(12,5,5,0) 39%, rgba(0,0,0,1) 71%, rgba(0,0,0,1) 97%);	
+	overflow-x: hidden;
+  transition: 0.5s;
+}
+
+.overlay-content {
+  position: relative;
+  top: -0%;
+  width: 100%;
+  text-align: center;
+  margin-top: 0px;
+}
+
+.overlay a {
+  padding: 8px;
+  text-decoration: none;
+  font-size: 36px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.overlay a:hover, .overlay a:focus {
+  color: #f1f1f1;
+}
+
+.overlay .closebtn {
+  position: absolute;
+z-index:999;
+border-top-left-radius: 2px;
+    border-bottom-left-radius: 2px;	
+  top: 0%;
+Color:#fff;
+background-color:#566D7E;
+  right: 92%;
+  font-size: 30px;
+
+}
+
+@media screen and (max-height: 450px) {
+  .overlay a {font-size: 20px}
+  .overlay .closebtn {
+  font-size: 40px;
+  top: 205px;
+  right: 35px;
+  }
+}
+</style>
+
+
+
+<div id="myNav" class="overlay">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"><i class="fa fa-close" style="font-size:20px;color:#15E2F5"></i></a>
+  <div class="overlay-content">
+    
+	  
+	  
+	  
+	  
+<center>
+
+	    
+<div class="alert alert-success" role="alert">
+  <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+	<div class="vfy1">
+  <strong><div id="share_titlevkm1m">
+</div>
+</div>
+<div id="share_textvkm1m"></div></div>
+<div id="outputvkm1m"></div>    
+</center>
+
+
+</div>
+
+  </div>
+
+
+
+
+
+
+
+
+
+	
+
+
+
+
+<script>
+function openNav() {
+  document.getElementById("myNav").style.width = "100%";
+}
+
+function closeNav() {
+  document.getElementById("myNav").style.width = "0%";
+}
+</script>
+     
+
+</!doctype>
+
+	
+</script>
+<script>/*<![CDATA[*/ 
+  const installButton = document.getElementById("vivek_maurya");window.addEventListener("beforeinstallprompt", e => {e.preventDefault();deferredPrompt = e;installButton.hidden = false;installButton.addEventListener("click", installApp);});function installApp() {deferredPrompt.prompt();installButton.disabled = true;deferredPrompt.userChoice.then(choiceResult => {if (choiceResult.outcome === "accepted") {installButton.hidden = true;} else {}installButton.disabled = false;deferredPrompt = null;});}window.addEventListener("appinstalled", evt => {console.log("appinstalled fired", evt);});
+  /*]]>*/</script>
+<script>
+    if ('serviceWorker' in navigator) {
+      navigator.serviceWorker.register('./sw.js');
+    } else {
+      alert('ServiceWorker unavailable');
+    }
+  </script>
+
+
+	
+	
+	<script>
+
+
+
+$('#showAutoClose').click( function (){
+  showToast(
+    { 
+      eleWrapper: '#example',
+      msg: 'VFY:-Your Download Is In Process.',
+      theme: 'success',
+      closeButton: false,
+      autoClose: true
+    } 
+  );
+});
+
+function showToast(option){
+  var wrapper = $(option.eleWrapper);
+  var toast = createToast(option);
+  toast = $(toast).hide().fadeIn(750);
+  if(option.autoClose){
+    var outTime  = option.autoCloseTime || 3500;
+    if(outTime < 1000){
+      outTime =  1000;
+    }
+    var watch = setTimeout(function(){
+      toast.animate({ 'margin-top' : '-50px' , 'opacity': '0'},500, function(){
+        this.remove();
+        if(option.afterClose){
+          option.afterClose();
+        }
+      })
+    }, outTime);
+  }
+
+  $(wrapper).on('click', '.hs-close', function(){
+    $(this).closest('.hs-toast').remove();
+    //clearTimeout(watch);
+    if(option.afterClose){
+      option.afterClose();
+    }  
   });
 
-  recognition.onresult = function(event) {
-    const lastResult = event.results[event.results.length - 1][0].transcript;
+  $(wrapper).append(toast);
+  if(option.afterShow){
+    option.afterShow();
+  }
+}
+
+function createToast(option){
+  var final = toastCaseValidation(option);
+  var html = `
+               <div class="hs-toast hs-theme-`+(option.theme).toLowerCase()+`">
+                <div class="hs-toast-inner">                
+                  <div class="hs-toast-icons">
+                    `+final.icon+`
+                  </div>
+                  <div class="hs-toast-msg">
+                    `+final.msg+`
+                  </div>
+                  <div class="hs-toast-action">
+                    `+final.close+`
+                  </div>
+                </div>
+               </div>`;
+  return html;
+}
+
+function toastCaseValidation(option){
+  var finalOption={};
+  var toastmsg;
+  var themeIco;
+  var closeBtn =  '<button type="button" class="hs-close">&#10006;</button>';
+  switch(option.theme) {
+    case 'error':
+      themeIco = '<svg aria-hidden="true" focusable="false"  xmlns="http://www.w3.org/2000/svg" width="1.875em" height="1.875em" viewBox="0 0 30 30"> <circle fill="none" stroke="#fff" stroke-width="2"  cx="50%" cy="50%" r="13" stroke-dasharray="100"> <animate attributeName="stroke-dashoffset" from="100" to="0" dur="0.9s" /> </circle> <line fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round"  x1="10.5" y1="10.5" x2="19.5" y2="19.5" stroke-dasharray="100"> <animate attributeName="stroke-dashoffset"  from="100" to="0" dur="4s" /> </line> <line fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round"  x1="19.5" y1="10.5" x2="10.5" y2="19.5" stroke-dasharray="100"> <animate attributeName="stroke-dashoffset"  from="100" to="0" dur="4s" /> </line> </svg>';
+      break;
+    case 'success':
+      themeIco = '<svg aria-hidden="true" focusable="false"  xmlns="http://www.w3.org/2000/svg" width="1.875em" height="1.875em" viewBox="0 0 30 30"> <circle fill="none" stroke="#fff" stroke-width="2" cx="50%" cy="50%" r="13" stroke-dasharray="100"> <animate attributeName="stroke-dashoffset" from="100" to="0" dur="0.9s" /> </circle> <polyline fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" points="8,17 13,21 22,10" stroke-dasharray="100"> <animate attributeName="stroke-dashoffset"  from="100" to="0" dur="4s" /> </polyline> </svg>';
+      break;
+    case 'warning':
+      themeIco = '<svg aria-hidden="true" focusable="false"  xmlns="http://www.w3.org/2000/svg" width="1.875em" height="1.875em" viewBox="0 0 30 30" > <path  d="M 13 2 Q 15,0 17,2 L 26,23 Q 26,26 23,26 L 6,26 Q 2,26 3,22 L 13,2" stroke="white" stroke-width="2" fill="none" stroke-linecap="round" stroke-dasharray="100"> <animate attributeName="stroke-dashoffset"  from="100" to="0" dur="0.9s" /> </path> <line  fill="none" stroke="#fff" stroke-width="3" stroke-linecap="round" x1="15" y1="9" x2="15" y2="17" stroke-dasharray="100"> <animate attributeName="stroke-dashoffset"  from="100" to="0" dur="5s" /> </line> <line  fill="none" stroke="#fff" stroke-width="3" stroke-linecap="round" x1="15" y1="21" x2="15" y2="22" stroke-dasharray="100"> <animate attributeName="stroke-dashoffset"  from="100" to="0" dur="5s" /> </line> </svg>';
+      break;
+    default:
+      themeIco = '<svg aria-hidden="true" focusable="false"  xmlns="http://www.w3.org/2000/svg" width="1.875em" height="1.875em" viewBox="0 0 30 30"> <circle fill="none" stroke="#fff" stroke-width="2" cx="50%" cy="50%" r="13" stroke-dasharray="100"> <animate attributeName="stroke-dashoffset" from="100" to="0" dur="0.9s" /> </circle> <line fill="none" stroke="#fff" stroke-width="3" stroke-linecap="round" x1="15" y1="9" x2="15" y2="9" stroke-dasharray="100"> <animate attributeName="stroke-dashoffset"  from="100" to="0" dur="6s" /> </line> <line fill="none" stroke="#fff" stroke-width="3" stroke-linecap="round" x1="15" y1="15" x2="15" y2="22" stroke-dasharray="100"> <animate attributeName="stroke-dashoffset"  from="100" to="0" dur="6s" /> </line> </svg>';
+  }
+  if(option.closeButton == false){
+    closeBtn = '';
+  }
+  
+  if(option.msg == undefined ){ 
+    toastmsg = 'No Message';
+  }
+  else{
+    if(option.msg.length != 1  && typeof option.msg === "object" ){ 
+      toastmsg = '<ul>';            
+        option.msg.forEach(function(val,index){                     
+          toastmsg = toastmsg + '<li>'+val+'</li>';
+        });                
+      toastmsg = toastmsg +'</ul>';     
+    }
+    else{                                
+      toastmsg =option.msg;             
+    }
+	}
+  finalOption.icon = themeIco;
+  finalOption.close = closeBtn;
+  finalOption.msg = toastmsg;
+  return finalOption;
+}
+</script>
+
+<style>
+ .hs-toast-fixed-top{
+    position: fixed;
+    top: 60px;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+  }
+
+  .hs-toast-absolute-top{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+  }
+  
+  .hs-toast-wrapper{
+    margin: 0 auto;
+    max-width: 44rem;
+    padding-left: .75rem;
+    padding-right: .75rem;
+  }
+  .hs-toast{
+    margin: 0 auto;
+    border-radius: .25rem;
+    box-shadow: 0 .2rem .5rem rgba(0,0,0,.2);
+    background: #5b7e96;
+    padding: .5rem .75rem;
+    max-width: 40rem;
+    position: relative;
+  }
+
+  .hs-toast-inner{
+    display: flex;
+  }
+  .hs-toast-msg{
+    color: white;
+    line-height: 1.5rem;
+    flex: 1 1 0%;
+    min-width: 0;
+    padding-top: .2rem;
+    padding-left: .5rem;
+    padding-right: .75rem;
+        overflow-wrap: break-word;
+    word-wrap: break-word;
+    -webkit-hyphens: auto;
+    -ms-hyphens: auto;
+    hyphens: auto;
+  }
+  .hs-toast-msg ul{
+    margin: 0;
+    padding-left: .75rem;
+  }
+  .hs-toast-icons, .hs-toast-action{
+    flex: none;
+    color: white;
+  }
+  .hs-toast-action{
+    cursor: pointer;
+  }
+  
+  .hs-close{
+    border: none;
+    background: none;
+    color:white;
+    outline:none;
+    padding: 0;
+    font-family: 'Arial', Segoe UI Symbol;
+  }
+  .hs-toast + .hs-toast{
+    margin-top: .5rem;
+  }
+  .hs-theme-error{
+    background: #fe4a5d;
+  }
+  .hs-theme-success{
+    background: rgb(255,94,0);
+background: linear-gradient(90deg, rgba(255,94,0,1) 0%, rgba(0,212,255,1) 49%, rgba(225,41,17,1) 100%);
+  }
+  .hs-theme-warning{
+    background: #000;
+  }
+
+
+
+
+
+
+<style>
+div.vfy1 {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}</style>
+
+<script>window.setTimeout(function() {
+    $(".alert").fadeTo(2000, 0).slideUp(3000, function(){
+        $(this).remove(); 
+    });
+}, 4000);</script>
+
+
+<script></script>
+	
+<audio id="watermarkAudio2" controls>
+            <source src="/sound/next.mp3" type="audio/mpeg">
+        </audio>
+<audio id="watermarkAudio1" preload="auto">
+    <source src="/sound/start.mp3" type="audio/mpeg">
+</source></audio>
+
+
+<!doctype html>
+
+
     
-    for (const variation of playVariations) {
-      if (lastResult.toLowerCase().includes(variation)) {
-        // "play" or its variations are detected
-        // Execute the "play" command here.
-        speak("okay");
-        break; // Exit the loop once a variation is detected
+
+
+    
+
+    
+
+
+</!doctype>
+
+
+<script>
+const names = ["Arijit Singh Songs","Jubin nariyal songs","Jass Manak songs","Nehal kakkar songs","Sonu nigam songs","Kailash khair songs"," B praak songs","Kumar sanu songs","Alka Yagnik songs","Lata Mangeshkar songs","Yo Yo honey Singh songs","Aatif Aslam Songs","Neelkamal singh songs", "Ranjeet Singh songs", "Pawan singh songs","Ankush Raja songs","khesari lal songs","Ritesh Pandey songs", "Rakesh Mishra songs","Arvind akela Kallu songs"]; // Add your list of names here
+let currentIndex = 0;
+function changePlaceholder() {
+    const searchBox = document.getElementById("search-basic");
+    searchBox.placeholder = "Search for " + names[currentIndex];
+    currentIndex = (currentIndex + 1) % names.length;
+}
+
+setInterval(changePlaceholder, 1000); // Change placeholder every 1 second
+</script>
+
+<!doctype html>
+
+
+  
+
+
+  <audio id="disconnectAudio">
+    <source src="/sound/nd.mp3" type="audio/mpeg">
+  </source></audio>
+
+  <audio id="connectAudio">
+    <source src="/sound/nc.mp3" type="audio/mpeg">
+  </source></audio>
+
+  <script>
+    const disconnectAudio = document.getElementById("disconnectAudio");
+    const connectAudio = document.getElementById("connectAudio");
+    const internetCheckInterval = 100; // Check every 5 seconds (adjust as needed)
+    let wasOnline = true;
+
+    function checkInternetConnection() {
+      const online = window.navigator.onLine;
+
+      if (!online && wasOnline) {
+        disconnectAudio.play();
+        wasOnline = false;
+      } else if (online && !wasOnline) {
+        connectAudio.play();
+        wasOnline = true;
       }
     }
-  };
 
-  // Function to add text-to-speech
-  function speak(text) {
-    const synth = window.speechSynthesis;
-    const utterance = new SpeechSynthesisUtterance(text);
-    synth.speak(utterance);
+    setInterval(checkInternetConnection, internetCheckInterval);
+  </script>
+
+<script>
+  function speakSearchText() {
+    const searchInput = document.getElementById('search-basic');
+    const nameToSpeak = searchInput.value;
+
+    if ('speechSynthesis' in window) {
+      const utteranceName = new SpeechSynthesisUtterance(nameToSpeak);
+
+      // Select a male voice, if available
+      const voices = window.speechSynthesis.getVoices();
+      let maleVoice = voices.find(voice => voice.name === 'vivek');
+      if (maleVoice) {
+        utteranceName.voice = maleVoice;
+      } else {
+        console.log('Male voice not found; using the default voice.');
+      }
+
+      utteranceName.volume = 1; // Set volume to 100%
+
+      utteranceName.onend = function() {
+        // Once the name is spoken, initiate the audio link for "Search results from bhi faai music"
+        const audio = new Audio('/sound/result.mp3');
+        audio.play();
+      };
+
+      window.speechSynthesis.speak(utteranceName);
+    } else {
+      console.log('Text-to-speech not supported in this browser');
+    }
   }
 </script>
 
+
+
+
+
+
+
+
+
 	
+	
+ <butto id="developer"></butto>
+
+<butto id="playVideoButton"></butto>
+
+
+<style>
+  /* Styling for the modal container */
+  .modal-container {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: -28px;
+    width: 110%;
+    height: 100%;
+    background: rgb(63,181,219);
+background: linear-gradient(180deg, rgba(63,181,219,0.10703549592391304) 39%, rgba(42,108,129,1) 71%, rgba(21,35,39,1) 100%);
+z-index: 999999;
+  }
+
+  /* Styling for the modal content */
+  .modal-content {
+    background-color: transparent;
+    width: 100%;
+    top: 40%;
+    padding: 20px;
+    text-align: center;
+  }
+</style>
+
+
+
+
+
+
+<!-- The modal container -->
+<div id="modal" class="modal-container">
+  <div class="modal-content">
+    <span onclick="closeModal()" style="float: right;"></span>
+
+	  <div id="song-thumbnail"></div>
+	 <div id="profileThumbnail">
+	<!-- Profile thumbnail will be displayed here -->
+        </div>
+<div id="thumbnail"></div>	    
+ <div id="vfyAu"></div>  
+
+<audio style="control" id="SAudio" controls><source src='' type='audio/mpeg'></source></audio>
+<div class="popup-footer">
+<a id="rewindButton"><i class="fa fa-angle-double-left" style="font-size:28px;color: #15e2f5"></i></a>
+<i class="fa fa-close" style="font-size:28px;color: transparent"></i>
+<i class="fa fa-close" style="font-size:28px;color: transparent"></i>
+<i class="fa fa-close" style="font-size:28px;color: transparent"></i>		
+<a id="fastForwardButton"><i class="fa fa-angle-double-right" style="font-size:28px;color: #15e2f5"></i></a>
+</div>
+
+
+<!-- Popup container -->
+
+
+
+
+	  
+    
+    
+	   
+  </div>
+</div>
+
+<script>
+// Function to open the modal
+function openModal() {
+  document.getElementById("modal").style.display = "block";
+  // Automatically close the modal after 3 seconds
+  setTimeout(closeModal, 4000);
+}
+
+// Function to close the modal
+function closeModal() {
+  document.getElementById("modal").style.display = "none";
+}
+</script>
+
+
+</!doctype>
+
+
+
+  <button id="speakButton"></button>
+
+  <script>
+    // Check if the browser supports the Web Speech API
+    if ('speechSynthesis' in window) {
+      const synth = window.speechSynthesis;
+      const speakButton = document.getElementById('speakButton');
+
+      function speakTime() {
+        const now = new Date();
+        const time = now.toLocaleTimeString();
+
+        // Create a SpeechSynthesisUtterance and set the rate to 0.7 (70%)
+        const utterance = new SpeechSynthesisUtterance(time);
+        utterance.rate = 0.7;
+
+        synth.speak(utterance);
+      }
+
+      speakButton.addEventListener('click', speakTime);
+    } else {
+      alert("Text-to-speech is not supported in this browser.");
+    }
+  </script>
+
+<button id="speakButton1"></button>
+
+    <script>
+        document.getElementById("speakButton1").addEventListener("click", function () {
+            if ('speechSynthesis' in window) {
+                navigator.getBattery().then(function (battery) {
+                    var chargePercentage = (battery.level * 100).toString() + " percent";
+                    var synth = window.speechSynthesis;
+                    var utterance = new SpeechSynthesisUtterance(chargePercentage);
+                    synth.speak(utterance);
+                }).catch(function (err) {
+                    console.error("Battery API is not supported in this browser.");
+                });
+            } else {
+                console.error("Web Speech API is not supported in this browser.");
+            }
+        });
+    </script>
+
+
+
+    
+	
+<!doctype html>
+
+
+
+    <script src="https://apis.google.com/js/client.js"></script>
+    <script src="https://apis.google.com/js/api.js"></script>
+
+
+
+    <button id="AdAudio"></button>
+    <button id="AdVideo"></button>
+
+    
+    
+    <iframe id="video-player" width="0" height="0" style="display: none" allowfullscreen></iframe>
+
+    <script>
+        // Function to clean up text and remove special characters
+        function cleanText(text) {
+            // Use a regular expression to remove special characters and non-Hindi text
+            return text.replace(/[^A-Za-z0-9\u0900-\u097F\s]/g, '');
+        }
+
+        // Function to initiate voice search for audio
+        function startVoiceSearchForAudio() {
+            // Disable the audio button with a 2-second delay
+            document.getElementById('AdAudio').disabled = true;
+            setTimeout(function () {
+                var recognition = new webkitSpeechRecognition() || SpeechRecognition();
+                recognition.onresult = function (event) {
+                    // Get the recognized speech as the search query
+                    var query = event.results[0][0].transcript;
+                    searchYouTubeForAudio(query);
+                };
+
+                recognition.onend = function () {
+                    // Enable the audio button after recognition has started
+                    document.getElementById('AdAudio').disabled = false;
+                };
+
+                recognition.start();
+            }, 4000); // 2000 milliseconds (2 seconds) delay
+        }
+
+        // Function to perform a YouTube search and play the audio
+        function searchYouTubeForAudio(query) {
+            gapi.client.youtube.search.list({
+                part: 'snippet',
+                q: query,
+                maxResults: 1
+            }).then(function (response) {
+                // Clear previous result
+                document.getElementById('vfyAu').innerHTML = '';
+
+                // Display the search result
+                var item = response.result.items[0];
+                var videoTitle = cleanText(item.snippet.title); // Clean up the video title
+                var videoId = item.id.videoId;
+                
+                var thumbnailUrl = item.snippet.thumbnails.high.url; // Use 'high' for HD size
+
+var songThumbnailDiv = document.getElementById('thumbnail');
+songThumbnailDiv.innerHTML = '<img src="' + thumbnailUrl + '" alt="Thumbnail">';
+
+                
+
+                // Add TTS for the video title
+                var synth = window.speechSynthesis;
+                var utterance = new SpeechSynthesisUtterance(videoTitle);
+                synth.speak(utterance);
+
+	    // Audio player ko audio source se set karo
+var audioPlayer = document.getElementById('SAudio');
+audioPlayer.src = 'https://audioserver-dev-cgen.2.sg-1.fl0.io/' + videoId;
+
+// Video title ko display karo
+var videoHeading = document.createElement('h4');
+videoHeading.textContent = videoTitle;
+document.getElementById('vfyAu').appendChild(videoHeading);
+
+// 10 seconds ke baad audio load fail hone par check karo
+setTimeout(function() {
+    if (audioPlayer.error) {
+        // Dusre link par shift karo aur play karo
+        audioPlayer.src = 'https://myserver-dev-atmq.2.ie-1.fl0.io/low-audio?url=https://youtu.be/' + videoId;
+        audioPlayer.play();
+    }
+}, 10000);
+
+// Audio ko display karo aur play karo
+audioPlayer.style.display = 'block';
+audioPlayer.play();
+}, function (error) {
+                console.error('Error: ' + error.result.error.message);
+            });
+        }		    
+
+
+        // Function to initiate voice search for video
+        function startVoiceSearchForVideo() {
+            // Disable the video button with a 2-second delay
+            document.getElementById('AdVideo').disabled = true;
+            setTimeout(function () {
+                var recognition = new webkitSpeechRecognition() || SpeechRecognition();
+                recognition.onresult = function (event) {
+                    // Get the recognized speech as the search query
+                    var query = event.results[0][0].transcript;
+                    searchYouTubeForVideo(query);
+                };
+
+                recognition.onend = function () {
+                    // Enable the video button after recognition has started
+                    document.getElementById('AdVideo').disabled = false;
+                };
+
+                recognition.start();
+            }, 4000); // 2000 milliseconds (2 seconds) delay
+        }
+
+        // Function to perform a YouTube search and display the video
+        function searchYouTubeForVideo(query) {
+            gapi.client.youtube.search.list({
+                part: 'snippet',
+                q: query,
+                maxResults: 1
+            }).then(function (response) {
+                // Clear previous result
+                document.getElementById('vfyAu').innerHTML = '';
+
+                // Display the search result
+                var item = response.result.items[0];
+                var videoId = item.id.videoId;
+
+                // Set the source for the video player
+                var videoPlayer = document.getElementById('video-player');
+                videoPlayer.style.display = 'block';
+                videoPlayer.src = 'https://vivekfy-dev-jmbe.2.ie-1.fl0.io/download/audio?url=https://youtu.be/'+videoId;
+
+                // Display the video title
+                var videoTitle = cleanText(item.snippet.title); // Clean up the video title
+                var videoHeading = document.createElement('h4');
+                videoHeading.textContent = videoTitle;
+                document.getElementById('vfyAu').appendChild(videoHeading);
+                
+                
+                var thumbnailUrl = item.snippet.thumbnails.high.url; // Use 'high' for HD size
+
+var songThumbnailDiv = document.getElementById('song-thumbnail');
+songThumbnailDiv.innerHTML = '<img src="' + thumbnailUrl + '" alt="Thumbnail">';
+
+                
+
+                // Play the video
+                videoPlayer.contentWindow.postMessage('{"event":"command","func":"playVideo","args":""}', '*');
+            }, function (error) {
+                console.error('Error: ' + error.result.error.message);
+            });
+        }
+
+        // Load the API client library
+        gapi.load('client', function () {
+            gapi.client.init({
+                apiKey: 'AIzaSyAs_tSQYJXX9axDYXkYGe9RZmt1p-XRFWo',
+                discoveryDocs: ['https://www.googleapis.com/discovery/v1/apis/youtube/v3/rest'],
+            }).then(function () {
+                // Add click event listeners to the voice search buttons
+                document.getElementById('AdAudio').addEventListener('click', startVoiceSearchForAudio);
+                document.getElementById('AdVideo').addEventListener('click', startVoiceSearchForVideo);
+            });
+        });
+    </script>
+
+
+</!doctype>
+
+
+
+
+
+
+
+<style>
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background-color: #252525;
+  color: white;
+  min-height: 100vh;
+  overflow-y: scroll;
+}
+body::-webkit-scrollbar {
+  display: none;
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 50px;
+  padding: 20px;
+  position: sticky !important;
+  top: 0;
+  background-color: #252525;
+}
+
+#sidebar div:hover {
+  background-color: #252525;
+}
+#sidebar div p {
+  font-size: 0.7em;
+}
+#options {
+  padding: 5px;
+  list-style: none;
+  display: flex;
+  gap: 10px;
+  overflow-x: scroll;
+  width: 90vw;
+  position: sticky;
+  top: 50px;
+  background-color: #252525;
+}
+#options::-webkit-scrollbar {
+  display: none;
+}
+#options li {
+  white-space: nowrap;
+  background-color: #252525;
+  padding: 5px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+#options li:hover {
+  background-color: rgb(74, 74, 74);
+}
+#banner {
+  flex: 2;
+}
+#videos {
+  padding: 20px;
+  margin: 0 auto;
+  display: grid;
+  gap: 25px;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+#videos div {
+  background-color: #252525;
+}
+#videos div > img {
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+section img {
+  border-radius: 50% !important;
+  height: 100%;
+}
+section small {
+  font-size: 0.7em;
+}
+section p {
+  font-size: 0.9em;
+}
+section {
+  display: flex;
+  gap: 20px;
+}
+@media all and (max-width: 500px) {
+  #user {
+    display: none;
+  }
+  #search {
+    width: 100%;
+  }
+  #search .fa-microphone {
+    padding: 8px;
+  }
+  #sidebar {
+    display: none;
+  }
+  #options {
+    width: 100vw;
+  }
+}</style>
+
+<script>const videoList = document.getElementById("videos");
+const li = document.getElementsByTagName("li");
+const videos = videoList.childNodes;
+
+for (let i = 0; i < 5; i++) {
+  videos.forEach((item) => {
+    let cln = item.cloneNode(true);
+    videoList.appendChild(cln);
+  });
+}
+
+
+}</script>
+
+
+
+
+ 
+	
+	<script>
+$(document).ready(function() {
+  var searchField = $("input.search-bar");
+  var autocompleteResults = $("#autocomplete-results");
+
+  // Initialize autocomplete for the input field with the "search-bar" class
+  searchField.autocomplete({
+    source: function(request, response) {
+      var term = request.term;
+      var s = {
+        client: "youtube",
+        ds: "yt"
+      }; // You can choose the appropriate client and ds here
+
+      $.ajax({
+        url: "//clients1.google.com/complete/search",
+        dataType: "jsonp",
+        data: {
+          q: term,
+          nolabels: "t",
+          client: s.client,
+          ds: s.ds
+        },
+        success: function(r) {
+          var data = r[1].map(function(item) {
+            return item[0];
+          });
+
+          // Display autocomplete results in the specified div
+          autocompleteResults.empty();
+          $.each(data, function(index, value) {
+            autocompleteResults.append("<p class='autocomplete-suggestion'>" + value + "</p>");
+          });
+        }
+      });
+    }
+  });
+
+  // Handle clicks on autocomplete suggestions for manual search
+  autocompleteResults.on("click", ".autocomplete-suggestion", function() {
+    searchField.val($(this).text());
+    hideAutocompleteResults();
+  });
+// Handle clicks on autocomplete suggestions for manual search
+autocompleteResults.on("click", ".autocomplete-suggestion", function() {
+  var suggestion = $(this).text();
+  searchField.val(suggestion);
+  hideAutocompleteResults();
+
+  // Programmatically trigger a click on the search button
+  $("#search-btn").click();
+});
+
+  // Listen for "Enter" key press to disable autocomplete
+  searchField.keypress(function(event) {
+    if (event.which === 8) {
+      // "Enter" key pressed, disable autocomplete
+      searchField.autocomplete("disable");
+    }
+  });
+
+  function hideAutocompleteResults() {
+    // Hide autocomplete results after 2 seconds
+    setTimeout(function() {
+      autocompleteResults.empty();
+    }, 20);
+  }
+});
+</script>
+
+
+	
+
+
 
 
